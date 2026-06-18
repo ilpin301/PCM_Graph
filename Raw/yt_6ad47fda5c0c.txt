@@ -1,0 +1,103 @@
+Have you ever wondered how scientists and engineers design transistors that are around the width of a strand of DNA? How do we even take pictures of such nanoscopic transistors? Well, that's the role of the electron microscope, which has literally changed the way humanity sees the micro and nanoscopic world. Don't believe us? Take this European peacock butterfly, for example. When we zoom in on its wing using a light microscope,
+we see that it's composed of tiny, overlapping scales. But when we zoom in using an electron microscope, we can clearly see the shape of each scale. And zooming in further, we see how the scales have a truly incredible texture entirely foreign to anything that humans manufacture.
+Although this wing may not be directly related to the technology you're familiar with, scientists and engineers have been using electron microscopes for the past 60 years to develop smaller and smaller transistors. And with today's technology, this microscope can zoom in millions of times to where it's able to capture images of individual atoms. There are two main types of electron microscopes.
+The scanning electron microscope or SEM is used to see surface images like this butterfly wing or the bristles of a used toothbrush. See, here are cells from your body, and all around here in yellow is bacteria. It's gross, but let's move on.
+Scanning electron microscopes have a maximum resolution of around one nanometer, meaning the spacing between two adjacent features or dots of resolvable data in an image is one nanometer. The other type is the transmission electron microscope or TEM, which is used to take images of structures that are inside materials, much like an X-ray machine takes pictures of the bones inside our bodies.
+For example, TEMs are used to take the pictures of these sections of a transistor. However, in other domains of science, TEMs can be used to take images of proteins inside mitochondria, the powerhouse of the cell, or of nanoparticles of pure gold.
+The transmission electron microscopes are typically more complex than SEMs and have a resolution up to 50 peak meters, which is roughly the size of a hydrogen atom.
+One quick note is that this video's sponsor, Thermo Fisher Scientific, provided us with a basic 3D model of one of their transmission electron microscopes and assisted in our understanding of the complex technology involved.
+This first focus on the TEMs is they are more commonly used in developing cutting edge technology and later will provide an overview of the scanning electron microscope and note that there is considerable overlap between the engineering inside them both.
+The basic idea behind the TEM is that it generates electrons and accelerates them to around 70% the speed of light, thus creating a beam of electrons.
+The series of magnetic lenses focuses the electrons down to a small area and shoots or transmits these electrons through the specimen that we're looking at.
+Depending on the different densities and materials inside the specimen, the electrons are scattered as they pass through it, thereby imprinting an image of what's inside the specimen onto the beam of electrons.
+The imprinted beam of electrons is then magnified 40 times using an objective lens and further magnified 50,000 times using a set of projector lenses.
+At this point, the imprinted image is 5 or so centimeters wide and large enough to be captured by a high resolution camera sensor at the bottom of the microscope.
+We'll explore the detailed engineering in a little bit, but for now you might be wondering why do we have to go through the hassle of manipulating electrons and why can't we just use light?
+Well, visible light is physically limited to magnifications up to around 2,000 times, and if you try to zoom in further, the image remains blurred without revealing any more details.
+On the other hand, electrons can reach meaningful magnifications up to 2,000,000 times. Why then is light physically limited?
+Well, let's return to this image of the European peacock butterfly and the scales on its wings. This image was captured with a camera.
+This image was taken with a light microscope, and these images were captured with an electron microscope.
+Let's consider two features from the specimen that are only 100 nanometers apart.
+Visible light has an average wavelength of 540 nanometers, which is larger than the distance between these two points.
+Due to the physics of waves, as light hits these two features it's bent around, thus creating a pair of propagating waves with a diffraction pattern resulting from the interference of the two waves.
+If the features are substantially closer than the wavelength of visible light, then the diffraction pattern will make the two features appear like a single blurred feature.
+In short, visible light can't really resolve features that are less than 300 nanometers apart.
+However, in this electron microscope, electrons are accelerated to 70% of the speed of light and have a wavelength of 2.5 picometers, which is around 200,000 times smaller than visible light's wavelength.
+In principle, such an electron microscope could resolve features based just one picometer apart.
+But due to the magnetic lens' physical limitations, the real resolution is around 50 picometers, which is enough to see individual atoms in a material.
+Also, if you're wondering about the scale of micrometers, nanometers, and picometers, here's a comparison of the size of each unit.
+Note that there are many more details and facts that were cut from this video's script and thrown into the creator's comments, which you can find in the English Canadian subtitles.
+Let's now dive into the complex science and engineering behind each part of this transmission electron microscope.
+We'll begin at the top, with a device called a field emission source, which generates free electrons.
+The basic principle is that negatively charged electrons are attracted to positive electric fields.
+Here we have a tungsten crystal needle, and below is a ring called the extractor.
+This extraction ring is connected to positive 5,000 volts.
+And as a result, the negatively charged electrons in the tungsten are pulled towards the extractor.
+The electric field's effect on the electrons is amplified by the sharply pointed tungsten crystal, which is only a few nanometers wide, and as a result, the electrons are freed from the tungsten.
+The next step is to accelerate them to 70% the speed of light.
+To do this, we use a series of metal rings which are graduated to be tens of thousands of volts apart from one another.
+And just like before, these positively charged rings use electrostatics to attract the negatively charged electrons, which are accelerated through the center of the rings.
+There are two key reasons for the incredible speed of the electron.
+First is so they can travel through the specimen, whether it be a transistor, protein, or a crystal lattice, or something else that has been sliced to typically only 100 nanometers in thickness.
+And second, as mentioned earlier, electrons exhibit wave-like properties, and the faster they are, the shorter the wavelength than the higher the resolution achievable.
+One important detail is that when the microscope is running and electrons are being accelerated to relativistic speeds, vacuum pumps are used to remove all the atmospheric molecules, thus creating a vacuum similar to the vacuum of outer space.
+This is because incredibly fast-moving electrons will scatter in random directions as they collide with air molecules and thus ruin the images of the specimen.
+Now that we have a beam of electrons, we'll explore the magnetic lenses of which there are essentially three sets, the condenser, the objective, and the projector.
+The role of the condenser magnetic lenses is to focus the electrons from the source and project them onto the sample so that they illuminate an area the size of a micrometer to several nanometers, depending on the desired magnification.
+Additionally, the microscope uses apertures, or holes placed in the path of the beam to filter out any electrons that are fanning too far from the center of the column, or optical access, resulting in electrons more parallel to one another before they hit the specimen.
+The specimen is placed on a holder which is inserted through an airlock into the vacuum chamber.
+To see different aspects of the specimen such as the crystal lattices, the holder can move or translate the specimen in all three directions, X, Y, and Z, and rotate the specimen along the X axis, and with some holders, also the Y axis.
+With this, we can get images exactly perpendicular to the features, such as these transistors inside.
+The incredibly small beam then hits the specimen composed of different elements and densities of materials, thus scattering the electrons in different ways, thereby imprinting an image on the transmitted electron beam.
+The next lenses, the objective in a series of four projector lenses, are used to resolve and magnify the minuscule image imprinted into the electron beam up to a width of a few centimeters.
+This process is separated into two parts.
+First, the objective lens, often considered the heart of the microscope, magnifies the image by 40 times, and its optical aberrations define the final resolution.
+Then the projector lens is magnify the image the rest of the way by 50,000 times.
+What are optical aberrations and why is 2 million times the typical maximum magnification?
+Well, let's look at this image of 962 blurry atoms of gold.
+With today's technology, the TEM's ability to resolve the smallest features is not limited by the electrons in the beam, but rather, by the lenses and the aberrations and distortions that they add to the image imprinted electron beam,
+after it's been magnified.
+There are a few main types of aberrations, such as spherical and chromatic, which we won't explore further.
+But the main idea is that perfectly controlling a beam of electrons is far from trivial, and the aberrations add blurriness and impede resolution after the magnification.
+The projector lens is magnify what has already been magnified by the objective lens, including the added aberrations, and this second magnification adds its own aberrations afterwards.
+Therefore, a considerable amount of science and engineering is dedicated to reducing the aberrations introduced by the objective lens, as that is what ultimately limits the sub-nanometer scale resolution of the microscope.
+One thing you're probably wondering is why these magnetic lenses look nothing like microscope or camera lenses, and how do magnetic lenses operate on fast-moving electrons?
+Well, inside the lens is a coil of copper wire, surrounded by an iron housing.
+When a current is run through these coils, a magnetic field is produced.
+This magnetic field is then routed through the iron to the pole pieces, where it's channeled into an optical column.
+These magnetic fields are then used to change the trajectory of the electron by bending the electrons toward the center or optical access in a shrinking helical direction.
+The physics at play is the Lorenz law. To summarize, the force on the electron is equal to its charge, Q, times V or the electron's velocity vector, crossed with B, the magnetic field vector.
+In short, if the electron were to have a velocity away from the optical axis, it would be forced by the magnetic field down towards the center.
+However, if the electron were traveling perfectly down the center along the optical axis, it wouldn't experience any Lorenz force from the magnetic fields and would just continue down the center.
+As a result, the magnetic lenses act as convex or converging lenses, focusing all the electrons down to a focal point.
+As the electrons continue their trajectory past the focal point and expand, they produce a magnified image.
+This magnification depends on the strength of the magnetic fields, the position of the lenses, and the position of the detectors in cameras.
+Let's move further down the microscope and explore how we turn electrons into images.
+There are two separate systems. First, we have a phosphorescent screen, which has a special coating that glows when electrons hit it, and a camera is used to view the screen.
+This system is used to align the microscope and provide an overview of the specimen.
+When you're ready to capture a high resolution image, the phosphorescent screen moves out of the way and the image is captured using the second system with a more sensitive CMOS camera
+that has a higher resolution and dynamic range. The purpose of having two systems is that the phosphorescent screen and camera is used to ensure that the electron beam and magnetic lenses are set up properly as an incorrectly focused beam could damage the sensitive CMOS camera.
+We've covered many key parts of the microscope, but there are other pieces of equipment and modules that provide additional features.
+For example, there are X-ray detectors, energy filters, phase plates, monochromatores, multiple correctors, mechanisms to hold and adjust apertures, water cooling for the magnetic lenses, tons of circuitry to control the magnetic lenses in the field emission source, vacuum pumps, power supplies, and much more.
+Additionally, the entire microscope sits on air cushions to remove external vibrations.
+Undoubtedly, this microscope represents an incredible amount of science and engineering.
+And we're thankful to this video's sponsor, Thermofisher Scientific, for allowing us to look inside.
+In addition to electron microscopes, Thermofisher also makes a wide range of laboratory equipment such as centrifuges, incubators, X-ray and mass spectrometers, and in fact, they make PCR systems that can be used to test for COVID-19. Undeniably, Thermofisher products are some of the backbones of scientific research in labs across the world.
+Thermofisher isn't sponsoring this video because they want you to buy a multi-million dollar electron microscope, but rather, just like us at branch education, they believe that the future of humanity lies in the hands of scientists and engineers' abilities to discover, innovate, and engineer solutions to the problems that face humanity.
+If you're pursuing a career in science or engineering, take a look at Thermofisher Scientific.
+YouTube could work on creating the tools that propel science and engineering forward.
+Now that we understand the transmission electron microscope, let's look at the scanning electron microscope or SEM, which Thermofisher Scientific also manufactures.
+The main idea is that instead of illuminating an area of a specimen and imprinting the image all at once, with a SEM, we create a focus spot and scan this spot across the object we're trying to magnify.
+These electrons then bounce off and in the process create secondary electrons, back scattered electrons and X-rays, which we measure to get details as to the surface topology and chemical composition.
+For example, this process was used to create these images of the butterfly wing or of this sold crystal.
+The issue with SEM is that it only takes images of the surfaces of materials and the resolution is limited by how small we can create the focused spot and by how deep the electrons penetrate into the sample or the so-called interaction volume.
+The practical resolution is typically around one nanometer. Additionally, a useful variation of the transmission electron microscope that's worth mentioning is called an STEM, where the S is for scanning.
+This microscope is similar to the TEM, but like the SEM, we focus the beam into a spot and then use deflection coils to scan the spot through the specimen.
+The benefit of STEM is that it has a different mechanism for creating image contrast and when paired with an X-ray detector is capable of elemental analysis of the sample.
+More expensive TEMs typically have the optical elements and circuitry to perform both TEM and STEM and the user can toggle between the two modes.
+We're sure you have many questions. Feel free to put them in the comments below and we'll try to answer them in the top pin comment.
+Also, one of the scientists from ThermoFisher who works on these microscopes and helped us to research and write this script has written the creator's comments with loads of additional information, so take a look at them in the English Canadian subtitles.
+We believe the future will require a strong emphasis on engineering education and we're thankful to all our Patreon and YouTube memberships sponsors for supporting this dream.
+If you want to support us on YouTube memberships or Patreon, you can find the links in the description.
+This is Branch Education and we create 3D animations that dive deeply into the technology that drives our modern world.
+Watch another Branch video by clicking one of these cards or click here to subscribe. Thanks for watching to the end.

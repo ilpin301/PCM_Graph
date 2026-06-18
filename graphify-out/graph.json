@@ -4,216 +4,44 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "gst_pseudobinary_tieline",
-        "label": "GeTe-Sb2Te3 Pseudo-Binary Tie-Line PCMs",
+        "id": "tem_lens_system",
+        "label": "TEM Three-Lens Magnification System",
         "nodes": [
-          "concept_ge2sb2te5",
-          "concept_gete",
-          "concept_sb2te3"
+          "raw_yt_6ad47fda5c0c_condenser_lens",
+          "raw_yt_6ad47fda5c0c_objective_lens",
+          "raw_yt_6ad47fda5c0c_projector_lens"
         ],
-        "relation": "form",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Sources/1-d-chalcogenide-nanomaterials-for-electronics-phase--change-memory-and-topologi.md"
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/yt_6ad47fda5c0c.txt"
       },
       {
-        "id": "pcm_electronic_switching_mechanism",
-        "label": "Electronic PCM Switching Mechanism",
+        "id": "electron_beam_generation",
+        "label": "Electron Beam Generation and Acceleration",
         "nodes": [
-          "concept_melt_quench",
-          "concept_threshold_switching",
-          "concept_joule_heating",
-          "concept_resistance_drift"
+          "raw_yt_6ad47fda5c0c_field_emission_source",
+          "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
+          "raw_yt_6ad47fda5c0c_extractor_ring",
+          "raw_yt_6ad47fda5c0c_electron_acceleration"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "raw/yt_6ad47fda5c0c.txt"
+      },
+      {
+        "id": "imaging_detection",
+        "label": "Image Detection System",
+        "nodes": [
+          "raw_yt_6ad47fda5c0c_phosphorescent_screen",
+          "raw_yt_6ad47fda5c0c_cmos_camera",
+          "raw_yt_6ad47fda5c0c_electron_beam"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.75,
-        "source_file": "Raw/Sources/bruns-2012-electronic-switching-pcm.md"
-      },
-      {
-        "id": "pcm_thermal_energy_storage_apps",
-        "label": "PCM Thermal Energy Storage Applications",
-        "nodes": [
-          "concept_latent_heat",
-          "concept_thermal_energy_storage",
-          "sources_are_phase_change_materials_the_future_of_water_heaters_sunamp_thermino",
-          "sources_cooling_ai_how_phase_change_materials_make_a_difference_la_flex",
-          "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_spcm"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Sources/Cooling AI How Phase Change Materials Make a Difference.md"
-      },
-      {
-        "id": "gst_sb2te3_superlattice_pcm",
-        "label": "GST/Sb2Te3 Superlattice Phase-Change Memory Engineering",
-        "nodes": [
-          "concept_gst124",
-          "concept_sb2te3",
-          "concept_superlattice",
-          "concept_interfacial_phase_change_memory"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Sources/piperidou-2025-gst-sb2te3-superlattices.md"
-      },
-      {
-        "id": "solution_processed_telluride_films",
-        "label": "Solution-Processed Chalcogenide PCM Film Fabrication",
-        "nodes": [
-          "concept_molecular_telluride_inks",
-          "concept_amine_thiol_cosolvent",
-          "concept_chemical_solution_deposition",
-          "concept_solution_processing"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Sources/phase-change-memory-from-molecular-tellurides.md"
-      },
-      {
-        "id": "spm_nanoscale_pcm_characterization",
-        "label": "Scanning-Probe Nanoscale Characterization of PCM Phase Change",
-        "nodes": [
-          "concept_scanning_tunneling_microscopy",
-          "concept_atomic_force_microscopy",
-          "concept_amorphous_crystalline_transition",
-          "concept_scanning_probe_microscopy"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Sources/scanning-probe-microscopy-textbook.md"
-      },
-      {
-        "id": "in2te3_gst_superlattice_system",
-        "label": "In2Te3/GST-124 superlattice optical switching system",
-        "nodes": [
-          "concept_superlattice",
-          "concept_in2te3",
-          "concept_ge1sb2te4",
-          "concept_van_der_waals_interface",
-          "files_bachelorarbeit_laser_switching_setup"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Files/Bachelorarbeit_FINAL_RW_final_260513_130841.pdf"
-      },
-      {
-        "id": "amorphous_crystalline_switching_cycle",
-        "label": "Amorphous-crystalline reversible switching cycle",
-        "nodes": [
-          "concept_amorphous_phase",
-          "concept_crystalline_phase",
-          "concept_amorphization",
-          "concept_crystallization",
-          "concept_melt_quenching"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Files/nmat2009.pdf"
-      },
-      {
-        "id": "gst_laser_recorded_mark_categories",
-        "label": "GST laser-recorded mark characterization (etching + microscopy)",
-        "nodes": [
-          "concept_ge2sb2te5",
-          "concept_selective_chemical_etching",
-          "concept_afm",
-          "concept_optical_contrast"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Files/oe-18-17-18383.pdf"
-      },
-      {
-        "id": "ostwald_polymorph_crystallization_pathway",
-        "label": "Ostwald-Rule Polymorph-Mediated Crystallization Pathway in GST",
-        "nodes": [
-          "concept_ostwald_rule",
-          "concept_rocksalt_phase",
-          "concept_gst",
-          "concept_amorphous_crystalline_transition"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Files/firstprinciplesPCMthermo.pdf"
-      },
-      {
-        "id": "endurance_failure_drivers",
-        "label": "PCM Endurance Failure Drivers",
-        "nodes": [
-          "concept_endurance_cycling",
-          "concept_oxidation",
-          "concept_doping",
-          "concept_void_formation"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Files/ome-12-6-2145.pdf"
-      },
-      {
-        "id": "dft_screening_workflow",
-        "label": "First-Principles Thermodynamic Screening Workflow",
-        "nodes": [
-          "concept_dft",
-          "concept_materials_project",
-          "concept_tie_line",
-          "concept_polymorph_screening"
-        ],
-        "relation": "implement",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Files/firstprinciplesPCMthermo.pdf"
-      },
-      {
-        "id": "ist_active_nanophotonics_platform",
-        "label": "IST as Active Nanophotonics Platform (laser-written reconfigurable metasurfaces)",
-        "nodes": [
-          "concept_in3sbte2",
-          "concept_direct_laser_writing",
-          "concept_metasurface",
-          "concept_negative_permittivity"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Files/The plasmonic PCM In3SbTe2 for nanophotonics.pdf"
-      },
-      {
-        "id": "superlattice_bond_confinement_switching",
-        "label": "Bond Confinement Governs Superlattice Switching Performance",
-        "nodes": [
-          "concept_superlattice",
-          "concept_sb2te3",
-          "concept_pme",
-          "concept_bond_confinement"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.85,
-        "source_file": "Raw/Files/MA_Athanasia_Piperidou_final.pdf"
-      },
-      {
-        "id": "pcm_characterization_techniques",
-        "label": "PCM Superlattice Characterization Toolset",
-        "nodes": [
-          "concept_atom_probe_tomography",
-          "concept_atomic_force_microscopy",
-          "concept_ebsd",
-          "concept_laser_switching_setup"
-        ],
-        "relation": "participate_in",
-        "confidence": "INFERRED",
-        "confidence_score": 0.8,
-        "source_file": "Raw/Files/MA_Athanasia_Piperidou_final.pdf"
+        "source_file": "raw/yt_6ad47fda5c0c.txt"
       }
     ]
   },
@@ -227,9 +55,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_phase_change_material",
-      "community": 1,
-      "norm_label": "phase-change material (pcm)"
+      "community": 4,
+      "norm_label": "phase-change material (pcm)",
+      "id": "concept_phase_change_material"
     },
     {
       "label": "Phase-Change Memory (PCM/PCRAM)",
@@ -240,9 +68,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_phase_change_memory",
-      "community": 4,
-      "norm_label": "phase-change memory (pcm/pcram)"
+      "community": 5,
+      "norm_label": "phase-change memory (pcm/pcram)",
+      "id": "concept_phase_change_memory"
     },
     {
       "label": "Ge2Sb2Te5 (GST-225)",
@@ -253,9 +81,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ge2sb2te5",
-      "community": 6,
-      "norm_label": "ge2sb2te5 (gst-225)"
+      "community": 1,
+      "norm_label": "ge2sb2te5 (gst-225)",
+      "id": "concept_ge2sb2te5"
     },
     {
       "label": "GeTe",
@@ -266,9 +94,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gete",
-      "community": 4,
-      "norm_label": "gete"
+      "community": 1,
+      "norm_label": "gete",
+      "id": "concept_gete"
     },
     {
       "label": "Sb2Te3",
@@ -279,9 +107,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sb2te3",
-      "community": 0,
-      "norm_label": "sb2te3"
+      "community": 1,
+      "norm_label": "sb2te3",
+      "id": "concept_sb2te3"
     },
     {
       "label": "Chalcogenide Materials",
@@ -292,9 +120,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_chalcogenide",
-      "community": 1,
-      "norm_label": "chalcogenide materials"
+      "community": 4,
+      "norm_label": "chalcogenide materials",
+      "id": "concept_chalcogenide"
     },
     {
       "label": "Threshold Switching",
@@ -305,9 +133,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_threshold_switching",
-      "community": 4,
-      "norm_label": "threshold switching"
+      "community": 5,
+      "norm_label": "threshold switching",
+      "id": "concept_threshold_switching"
     },
     {
       "label": "Melt-Quench / Crystallization Switching Mechanism",
@@ -318,9 +146,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_melt_quench",
-      "community": 1,
-      "norm_label": "melt-quench / crystallization switching mechanism"
+      "community": 6,
+      "norm_label": "melt-quench / crystallization switching mechanism",
+      "id": "concept_melt_quench"
     },
     {
       "label": "Joule Heating",
@@ -331,9 +159,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_joule_heating",
-      "community": 5,
-      "norm_label": "joule heating"
+      "community": 7,
+      "norm_label": "joule heating",
+      "id": "concept_joule_heating"
     },
     {
       "label": "Resistance Drift",
@@ -344,9 +172,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_resistance_drift",
-      "community": 4,
-      "norm_label": "resistance drift"
+      "community": 5,
+      "norm_label": "resistance drift",
+      "id": "concept_resistance_drift"
     },
     {
       "label": "Nucleation- vs Growth-Dominated Crystallization",
@@ -357,9 +185,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nucleation_growth_crystallization",
-      "community": 5,
-      "norm_label": "nucleation- vs growth-dominated crystallization"
+      "community": 7,
+      "norm_label": "nucleation- vs growth-dominated crystallization",
+      "id": "concept_nucleation_growth_crystallization"
     },
     {
       "label": "Thermal Energy Storage (TES)",
@@ -370,9 +198,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_thermal_energy_storage",
-      "community": 7,
-      "norm_label": "thermal energy storage (tes)"
+      "community": 8,
+      "norm_label": "thermal energy storage (tes)",
+      "id": "concept_thermal_energy_storage"
     },
     {
       "label": "Latent Heat Storage",
@@ -383,9 +211,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_latent_heat",
-      "community": 7,
-      "norm_label": "latent heat storage"
+      "community": 8,
+      "norm_label": "latent heat storage",
+      "id": "concept_latent_heat"
     },
     {
       "label": "Topological Insulators",
@@ -396,9 +224,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_topological_insulator",
-      "community": 0,
-      "norm_label": "topological insulators"
+      "community": 2,
+      "norm_label": "topological insulators",
+      "id": "concept_topological_insulator"
     },
     {
       "label": "Machine-Learned Interatomic Potentials (GAP/ACE)",
@@ -409,9 +237,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_machine_learned_potential",
-      "community": 5,
-      "norm_label": "machine-learned interatomic potentials (gap/ace)"
+      "community": 7,
+      "norm_label": "machine-learned interatomic potentials (gap/ace)",
+      "id": "concept_machine_learned_potential"
     },
     {
       "label": "Neuromorphic / In-Memory Computing",
@@ -422,9 +250,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_neuromorphic_computing",
-      "community": 5,
-      "norm_label": "neuromorphic / in-memory computing"
+      "community": 7,
+      "norm_label": "neuromorphic / in-memory computing",
+      "id": "concept_neuromorphic_computing"
     },
     {
       "label": "Programmable Photonics / Metamaterials",
@@ -435,9 +263,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_programmable_photonics",
-      "community": 2,
-      "norm_label": "programmable photonics / metamaterials"
+      "community": 3,
+      "norm_label": "programmable photonics / metamaterials",
+      "id": "concept_programmable_photonics"
     },
     {
       "label": "Sb2S3 (Antimony Trisulfide)",
@@ -448,9 +276,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sb2s3",
-      "community": 2,
-      "norm_label": "sb2s3 (antimony trisulfide)"
+      "community": 3,
+      "norm_label": "sb2s3 (antimony trisulfide)",
+      "id": "concept_sb2s3"
     },
     {
       "label": "In3SbTe2 (IST)",
@@ -461,9 +289,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_in3sbte2",
-      "community": 2,
-      "norm_label": "in3sbte2 (ist)"
+      "community": 3,
+      "norm_label": "in3sbte2 (ist)",
+      "id": "concept_in3sbte2"
     },
     {
       "label": "Elemental Te Selector Switch",
@@ -474,9 +302,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_elemental_te_selector",
-      "community": 5,
-      "norm_label": "elemental te selector switch"
+      "community": 7,
+      "norm_label": "elemental te selector switch",
+      "id": "concept_elemental_te_selector"
     },
     {
       "label": "Metastable Rocksalt Crystalline Phase",
@@ -487,9 +315,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_rocksalt_metastable_phase",
-      "community": 6,
-      "norm_label": "metastable rocksalt crystalline phase"
+      "community": 7,
+      "norm_label": "metastable rocksalt crystalline phase",
+      "id": "concept_rocksalt_metastable_phase"
     },
     {
       "label": "Ovshinsky Electrical Switching (1968)",
@@ -500,9 +328,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ovshinsky_1968",
-      "community": 4,
-      "norm_label": "ovshinsky electrical switching (1968)"
+      "community": 5,
+      "norm_label": "ovshinsky electrical switching (1968)",
+      "id": "concept_ovshinsky_1968"
     },
     {
       "label": "Vapor-Liquid-Solid (VLS) Growth",
@@ -513,9 +341,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_vls_growth",
-      "community": 4,
-      "norm_label": "vapor-liquid-solid (vls) growth"
+      "community": 5,
+      "norm_label": "vapor-liquid-solid (vls) growth",
+      "id": "concept_vls_growth"
     },
     {
       "label": "In Situ TEM of PCM",
@@ -526,9 +354,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_in_situ_tem",
-      "community": 4,
-      "norm_label": "in situ tem of pcm"
+      "community": 5,
+      "norm_label": "in situ tem of pcm",
+      "id": "concept_in_situ_tem"
     },
     {
       "label": "Thermal Engineering / Confinement for RESET Current Reduction",
@@ -539,9 +367,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_thermal_confinement",
-      "community": 5,
-      "norm_label": "thermal engineering / confinement for reset current reduction"
+      "community": 7,
+      "norm_label": "thermal engineering / confinement for reset current reduction",
+      "id": "concept_thermal_confinement"
     },
     {
       "label": "Meister Dissertation: 1-D Chalcogenide Nanomaterials for Electronics",
@@ -552,9 +380,9 @@
       "captured_at": "2026-06-17",
       "author": "Stefan Meister",
       "contributor": null,
-      "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_meister_dissertation",
-      "community": 4,
-      "norm_label": "meister dissertation: 1-d chalcogenide nanomaterials for electronics"
+      "community": 5,
+      "norm_label": "meister dissertation: 1-d chalcogenide nanomaterials for electronics",
+      "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_meister_dissertation"
     },
     {
       "label": "Void Opening/Closing Switching Mechanism in PC Nanowires",
@@ -565,9 +393,9 @@
       "captured_at": "2026-06-17",
       "author": "Stefan Meister",
       "contributor": null,
-      "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_void_switching",
-      "community": 4,
-      "norm_label": "void opening/closing switching mechanism in pc nanowires"
+      "community": 5,
+      "norm_label": "void opening/closing switching mechanism in pc nanowires",
+      "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_void_switching"
     },
     {
       "label": "Are Phase Change Materials the Future of Water Heaters? (Undecided)",
@@ -578,9 +406,9 @@
       "captured_at": "2026-05-25",
       "author": "Undecided with Matt Ferrell (YouTube)",
       "contributor": null,
-      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_video",
-      "community": 7,
-      "norm_label": "are phase change materials the future of water heaters? (undecided)"
+      "community": 8,
+      "norm_label": "are phase change materials the future of water heaters? (undecided)",
+      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_video"
     },
     {
       "label": "Sunamp Thermino Heat Battery",
@@ -591,9 +419,9 @@
       "captured_at": "2026-05-25",
       "author": "Undecided with Matt Ferrell (YouTube)",
       "contributor": null,
-      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_sunamp_thermino",
-      "community": 7,
-      "norm_label": "sunamp thermino heat battery"
+      "community": 8,
+      "norm_label": "sunamp thermino heat battery",
+      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_sunamp_thermino"
     },
     {
       "label": "BioPCM ENRG Blanket (Phase Change Solutions)",
@@ -604,9 +432,9 @@
       "captured_at": "2026-05-25",
       "author": "Undecided with Matt Ferrell (YouTube)",
       "contributor": null,
-      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_biopcm",
-      "community": 7,
-      "norm_label": "biopcm enrg blanket (phase change solutions)"
+      "community": 8,
+      "norm_label": "biopcm enrg blanket (phase change solutions)",
+      "id": "sources_are_phase_change_materials_the_future_of_water_heaters_biopcm"
     },
     {
       "label": "Cooling AI: How PCMs Make a Difference (SINTEF)",
@@ -617,9 +445,9 @@
       "captured_at": "2026-05-25",
       "author": "SINTEF Energy Research (Juan M. Corber\u00e1n, Arash Nemati)",
       "contributor": null,
-      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_article",
-      "community": 7,
-      "norm_label": "cooling ai: how pcms make a difference (sintef)"
+      "community": 8,
+      "norm_label": "cooling ai: how pcms make a difference (sintef)",
+      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_article"
     },
     {
       "label": "La-Flex Project (PCM-TES for Data Centre Cooling)",
@@ -630,9 +458,9 @@
       "captured_at": "2026-05-25",
       "author": "SINTEF Energy Research (Juan M. Corber\u00e1n, Arash Nemati)",
       "contributor": null,
-      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_la_flex",
-      "community": 7,
-      "norm_label": "la-flex project (pcm-tes for data centre cooling)"
+      "community": 8,
+      "norm_label": "la-flex project (pcm-tes for data centre cooling)",
+      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_la_flex"
     },
     {
       "label": "Peak Shaving & Ancillary Services with PCM-TES",
@@ -643,9 +471,9 @@
       "captured_at": "2026-05-25",
       "author": "SINTEF Energy Research (Juan M. Corber\u00e1n, Arash Nemati)",
       "contributor": null,
-      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_peak_shaving",
-      "community": 7,
-      "norm_label": "peak shaving & ancillary services with pcm-tes"
+      "community": 8,
+      "norm_label": "peak shaving & ancillary services with pcm-tes",
+      "id": "sources_cooling_ai_how_phase_change_materials_make_a_difference_peak_shaving"
     },
     {
       "label": "Elliott: Phase-Change Memory and Switching Materials (Talk)",
@@ -656,9 +484,9 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "id": "sources_phase_change_memory_and_switching_materials_elliott_talk",
-      "community": 5,
-      "norm_label": "elliott: phase-change memory and switching materials (talk)"
+      "community": 7,
+      "norm_label": "elliott: phase-change memory and switching materials (talk)",
+      "id": "sources_phase_change_memory_and_switching_materials_elliott_talk"
     },
     {
       "label": "Hyper-Bonded Seesaw Units (3c-4e Bonds) in Glassy GST",
@@ -669,9 +497,9 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "id": "sources_phase_change_memory_and_switching_materials_hyperbonding",
-      "community": 5,
-      "norm_label": "hyper-bonded seesaw units (3c-4e bonds) in glassy gst"
+      "community": 7,
+      "norm_label": "hyper-bonded seesaw units (3c-4e bonds) in glassy gst",
+      "id": "sources_phase_change_memory_and_switching_materials_hyperbonding"
     },
     {
       "label": "Chiral Crystallization of Tellurium via Cubic Intermediate",
@@ -682,9 +510,9 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "id": "sources_phase_change_memory_and_switching_materials_chiral_te",
-      "community": 5,
-      "norm_label": "chiral crystallization of tellurium via cubic intermediate"
+      "community": 7,
+      "norm_label": "chiral crystallization of tellurium via cubic intermediate",
+      "id": "sources_phase_change_memory_and_switching_materials_chiral_te"
     },
     {
       "label": "Shen et al. 2021, Science 374, 1390 (Elemental Te Switch)",
@@ -695,9 +523,9 @@
       "captured_at": "2026-05-25",
       "author": "J Shen, S Jia, N Shi et al.",
       "contributor": null,
-      "id": "sources_phase_change_memory_and_switching_materials_shen_2021_te_switch",
-      "community": 5,
-      "norm_label": "shen et al. 2021, science 374, 1390 (elemental te switch)"
+      "community": 7,
+      "norm_label": "shen et al. 2021, science 374, 1390 (elemental te switch)",
+      "id": "sources_phase_change_memory_and_switching_materials_shen_2021_te_switch"
     },
     {
       "label": "Zhou et al. 2024, arXiv:2409.03860 (Pathway to Chirality in Te)",
@@ -708,9 +536,9 @@
       "captured_at": "2026-05-25",
       "author": "Y Zhou, SR Elliott, DF Thomas du Toit, W Zhang, VL Deringer",
       "contributor": null,
-      "id": "sources_phase_change_memory_and_switching_materials_zhou_2024_te_chirality",
-      "community": 5,
-      "norm_label": "zhou et al. 2024, arxiv:2409.03860 (pathway to chirality in te)"
+      "community": 7,
+      "norm_label": "zhou et al. 2024, arxiv:2409.03860 (pathway to chirality in te)",
+      "id": "sources_phase_change_memory_and_switching_materials_zhou_2024_te_chirality"
     },
     {
       "label": "Simpson: From Data Storage to Programmable Photonics (Talk)",
@@ -721,9 +549,9 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_talk",
-      "community": 2,
-      "norm_label": "simpson: from data storage to programmable photonics (talk)"
+      "community": 3,
+      "norm_label": "simpson: from data storage to programmable photonics (talk)",
+      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_talk"
     },
     {
       "label": "Metals Compatibility with GST (TiN Best Electrode)",
@@ -734,9 +562,9 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_metals_compat",
-      "community": 2,
-      "norm_label": "metals compatibility with gst (tin best electrode)"
+      "community": 3,
+      "norm_label": "metals compatibility with gst (tin best electrode)",
+      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_metals_compat"
     },
     {
       "label": "Sb2S3/Ag Hyperbolic Metamaterials",
@@ -747,9 +575,9 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_hyperbolic_mm",
-      "community": 2,
-      "norm_label": "sb2s3/ag hyperbolic metamaterials"
+      "community": 3,
+      "norm_label": "sb2s3/ag hyperbolic metamaterials",
+      "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_hyperbolic_mm"
     },
     {
       "label": "Adams et al.: First-Principles Thermodynamic Analysis of Ternary PCMs",
@@ -760,9 +588,9 @@
       "captured_at": "2026-05-25",
       "author": "Felix Adams, Ichiro Takeuchi, Carlos R\u00edos Ocampo, Yifei Mo",
       "contributor": null,
-      "id": "sources_adams_2025_firstprinciples_pcm_thermo_paper",
-      "community": 6,
-      "norm_label": "adams et al.: first-principles thermodynamic analysis of ternary pcms"
+      "community": 7,
+      "norm_label": "adams et al.: first-principles thermodynamic analysis of ternary pcms",
+      "id": "sources_adams_2025_firstprinciples_pcm_thermo_paper"
     },
     {
       "label": "Ostwald's Rule as PCM Screening Framework",
@@ -773,9 +601,9 @@
       "captured_at": "2026-05-25",
       "author": "Felix Adams, Ichiro Takeuchi, Carlos R\u00edos Ocampo, Yifei Mo",
       "contributor": null,
-      "id": "sources_adams_2025_firstprinciples_pcm_thermo_ostwald_rule",
-      "community": 6,
-      "norm_label": "ostwald's rule as pcm screening framework"
+      "community": 7,
+      "norm_label": "ostwald's rule as pcm screening framework",
+      "id": "sources_adams_2025_firstprinciples_pcm_thermo_ostwald_rule"
     },
     {
       "label": "Freeman Dissertation: Additive Manufacturing for PC Thermal Energy Storage",
@@ -786,9 +614,9 @@
       "captured_at": "2026-06-17",
       "author": "Thomas B. Freeman",
       "contributor": null,
-      "id": "sources_additive_manufacturing_for_phase_change_thermal_energy_storage_and_management_freeman_dissertation",
-      "community": 7,
-      "norm_label": "freeman dissertation: additive manufacturing for pc thermal energy storage"
+      "community": 8,
+      "norm_label": "freeman dissertation: additive manufacturing for pc thermal energy storage",
+      "id": "sources_additive_manufacturing_for_phase_change_thermal_energy_storage_and_management_freeman_dissertation"
     },
     {
       "label": "Muhabie et al.: Advances in PCMs for TES (SPCM Review)",
@@ -799,9 +627,9 @@
       "captured_at": "2026-06-17",
       "author": "Adem Ali Muhabie; Wubshet Getachew Mengesha; Xin Yang",
       "contributor": null,
-      "id": "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_review",
-      "community": 7,
-      "norm_label": "muhabie et al.: advances in pcms for tes (spcm review)"
+      "community": 8,
+      "norm_label": "muhabie et al.: advances in pcms for tes (spcm review)",
+      "id": "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_review"
     },
     {
       "label": "Supramolecular Phase Change Materials (SPCMs)",
@@ -812,9 +640,9 @@
       "captured_at": "2026-06-17",
       "author": "Adem Ali Muhabie; Wubshet Getachew Mengesha; Xin Yang",
       "contributor": null,
-      "id": "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_spcm",
-      "community": 7,
-      "norm_label": "supramolecular phase change materials (spcms)"
+      "community": 8,
+      "norm_label": "supramolecular phase change materials (spcms)",
+      "id": "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_spcm"
     },
     {
       "label": "Ahn et al.: Energy-Efficient PCM with Graphene Thermal Barrier",
@@ -825,9 +653,9 @@
       "captured_at": "2026-06-17",
       "author": "Chiyui Ahn et al.",
       "contributor": null,
-      "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_paper",
-      "community": 5,
-      "norm_label": "ahn et al.: energy-efficient pcm with graphene thermal barrier"
+      "community": 7,
+      "norm_label": "ahn et al.: energy-efficient pcm with graphene thermal barrier",
+      "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_paper"
     },
     {
       "label": "Graphene Interfacial Thermal Barrier in PCM",
@@ -838,9 +666,9 @@
       "captured_at": "2026-06-17",
       "author": "Chiyui Ahn et al.",
       "contributor": null,
-      "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_graphene_barrier",
-      "community": 5,
-      "norm_label": "graphene interfacial thermal barrier in pcm"
+      "community": 7,
+      "norm_label": "graphene interfacial thermal barrier in pcm",
+      "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_graphene_barrier"
     },
     {
       "label": "Bruns: Electronic Switching in Phase-Change Materials (Thesis)",
@@ -851,9 +679,9 @@
       "captured_at": "2026-05-25",
       "author": "Gunnar Bruns",
       "contributor": null,
-      "id": "sources_bruns_2012_electronic_switching_pcm_thesis",
-      "community": 4,
-      "norm_label": "bruns: electronic switching in phase-change materials (thesis)"
+      "community": 5,
+      "norm_label": "bruns: electronic switching in phase-change materials (thesis)",
+      "id": "sources_bruns_2012_electronic_switching_pcm_thesis"
     },
     {
       "label": "Field-Dependent Delay Time of Threshold Switching",
@@ -864,9 +692,9 @@
       "captured_at": "2026-05-25",
       "author": "Gunnar Bruns",
       "contributor": null,
-      "id": "sources_bruns_2012_electronic_switching_pcm_field_dependent_delay",
-      "community": 4,
-      "norm_label": "field-dependent delay time of threshold switching"
+      "community": 5,
+      "norm_label": "field-dependent delay time of threshold switching",
+      "id": "sources_bruns_2012_electronic_switching_pcm_field_dependent_delay"
     },
     {
       "label": "Conrads et al.: Plasmonic PCM In3SbTe2 for Nanophotonics (Review)",
@@ -877,9 +705,9 @@
       "captured_at": "2026-05-25",
       "author": "Lukas Conrads, Matthias Wuttig, Dmitry N. Chigrin, Thomas Taubner",
       "contributor": null,
-      "id": "sources_conrads_2025_ist_review_review",
-      "community": 2,
-      "norm_label": "conrads et al.: plasmonic pcm in3sbte2 for nanophotonics (review)"
+      "community": 3,
+      "norm_label": "conrads et al.: plasmonic pcm in3sbte2 for nanophotonics (review)",
+      "id": "sources_conrads_2025_ist_review_review"
     },
     {
       "label": "Peng et al.: n-Alkanes PCMs and Microencapsulation for TES (Review)",
@@ -890,9 +718,9 @@
       "captured_at": "2026-06-17",
       "author": "Hao Peng et al.",
       "contributor": null,
-      "id": "sources_ini_alkanes_phase_change_materials_and_their_microencapsulation_for_thermal_ener_review",
-      "community": 7,
-      "norm_label": "peng et al.: n-alkanes pcms and microencapsulation for tes (review)"
+      "community": 8,
+      "norm_label": "peng et al.: n-alkanes pcms and microencapsulation for tes (review)",
+      "id": "sources_ini_alkanes_phase_change_materials_and_their_microencapsulation_for_thermal_ener_review"
     },
     {
       "label": "LLM Wiki Starter Demo Source",
@@ -903,9 +731,9 @@
       "captured_at": "2026-05-25",
       "author": "LLM Wiki Starter",
       "contributor": null,
-      "id": "sources_llm_wiki_starter_demo_note",
       "community": 13,
-      "norm_label": "llm wiki starter demo source"
+      "norm_label": "llm wiki starter demo source",
+      "id": "sources_llm_wiki_starter_demo_note"
     },
     {
       "label": "Jiang et al.: Microstructure Characterization & Device Application of PCM",
@@ -916,9 +744,9 @@
       "captured_at": "2026-06-17",
       "author": "Kai Jiang; Shubing Li; Fangfang Chen; Liping Zhu; Wenwu Li",
       "contributor": null,
-      "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_review",
-      "community": 5,
-      "norm_label": "jiang et al.: microstructure characterization & device application of pcm"
+      "community": 7,
+      "norm_label": "jiang et al.: microstructure characterization & device application of pcm",
+      "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_review"
     },
     {
       "label": "Sc-Doped Sb2Te (SST) Sub-Nanosecond Crystallization",
@@ -929,9 +757,9 @@
       "captured_at": "2026-06-17",
       "author": "Kai Jiang; Shubing Li; Fangfang Chen; Liping Zhu; Wenwu Li",
       "contributor": null,
-      "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_sst_doping",
-      "community": 5,
-      "norm_label": "sc-doped sb2te (sst) sub-nanosecond crystallization"
+      "community": 7,
+      "norm_label": "sc-doped sb2te (sst) sub-nanosecond crystallization",
+      "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_sst_doping"
     },
     {
       "label": "Morphological Characterization & Applications of PCMs in TES (Review)",
@@ -942,9 +770,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "sources_morphological_characterization_and_applications_of_phase_change_materials_in_the_review",
-      "community": 7,
-      "norm_label": "morphological characterization & applications of pcms in tes (review)"
+      "community": 8,
+      "norm_label": "morphological characterization & applications of pcms in tes (review)",
+      "id": "sources_morphological_characterization_and_applications_of_phase_change_materials_in_the_review"
     },
     {
       "label": "Multifunctional Electrospun PCM Mats for Solar-Thermal Energy Storage",
@@ -955,9 +783,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "paper_electrospun_pcm_mats",
-      "community": 1,
-      "norm_label": "multifunctional electrospun pcm mats for solar-thermal energy storage"
+      "community": 4,
+      "norm_label": "multifunctional electrospun pcm mats for solar-thermal energy storage",
+      "id": "paper_electrospun_pcm_mats"
     },
     {
       "label": "Latent Heat Storage (LHS)",
@@ -968,9 +796,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_latent_heat_storage",
-      "community": 1,
-      "norm_label": "latent heat storage (lhs)"
+      "community": 4,
+      "norm_label": "latent heat storage (lhs)",
+      "id": "concept_latent_heat_storage"
     },
     {
       "label": "Photothermal Conversion",
@@ -981,9 +809,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_photothermal_conversion",
-      "community": 1,
-      "norm_label": "photothermal conversion"
+      "community": 4,
+      "norm_label": "photothermal conversion",
+      "id": "concept_photothermal_conversion"
     },
     {
       "label": "Electrospinning",
@@ -994,9 +822,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_electrospinning",
-      "community": 1,
-      "norm_label": "electrospinning"
+      "community": 4,
+      "norm_label": "electrospinning",
+      "id": "concept_electrospinning"
     },
     {
       "label": "PPCM1218 Polyester PCM",
@@ -1007,9 +835,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "paper_electrospun_pcm_mats_ppcm1218",
-      "community": 1,
-      "norm_label": "ppcm1218 polyester pcm"
+      "community": 4,
+      "norm_label": "ppcm1218 polyester pcm",
+      "id": "paper_electrospun_pcm_mats_ppcm1218"
     },
     {
       "label": "Nanoencapsulation of Phase Change Materials for Advanced TES",
@@ -1020,9 +848,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "paper_nanoencapsulation_pcm",
-      "community": 1,
-      "norm_label": "nanoencapsulation of phase change materials for advanced tes"
+      "community": 4,
+      "norm_label": "nanoencapsulation of phase change materials for advanced tes",
+      "id": "paper_nanoencapsulation_pcm"
     },
     {
       "label": "Nanoencapsulation",
@@ -1033,9 +861,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nanoencapsulation",
-      "community": 1,
-      "norm_label": "nanoencapsulation"
+      "community": 4,
+      "norm_label": "nanoencapsulation",
+      "id": "concept_nanoencapsulation"
     },
     {
       "label": "Sensible Heat Storage (SHS)",
@@ -1046,9 +874,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sensible_heat_storage",
-      "community": 1,
-      "norm_label": "sensible heat storage (shs)"
+      "community": 4,
+      "norm_label": "sensible heat storage (shs)",
+      "id": "concept_sensible_heat_storage"
     },
     {
       "label": "Thermochemical Energy Storage (TCS)",
@@ -1059,9 +887,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_thermochemical_energy_storage",
-      "community": 1,
-      "norm_label": "thermochemical energy storage (tcs)"
+      "community": 4,
+      "norm_label": "thermochemical energy storage (tcs)",
+      "id": "concept_thermochemical_energy_storage"
     },
     {
       "label": "Phase-Change Memory from Molecular Tellurides",
@@ -1072,9 +900,9 @@
       "captured_at": "2026-06-17",
       "author": "Florian M. Schenk; Till Zellweger; Dhananjeya Kumaar; Darijan Bo\u0161kovi\u0107; Simon Wintersteller; Pavlo Solokha; Serena De Negri; Alexandros Emboras et al.",
       "contributor": null,
-      "id": "paper_pcm_molecular_tellurides",
-      "community": 6,
-      "norm_label": "phase-change memory from molecular tellurides"
+      "community": 1,
+      "norm_label": "phase-change memory from molecular tellurides",
+      "id": "paper_pcm_molecular_tellurides"
     },
     {
       "label": "Solution Processing of Chalcogenides",
@@ -1085,9 +913,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_solution_processing",
-      "community": 6,
-      "norm_label": "solution processing of chalcogenides"
+      "community": 1,
+      "norm_label": "solution processing of chalcogenides",
+      "id": "concept_solution_processing"
     },
     {
       "label": "Molecular Telluride Inks",
@@ -1098,9 +926,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_molecular_telluride_inks",
-      "community": 6,
-      "norm_label": "molecular telluride inks"
+      "community": 1,
+      "norm_label": "molecular telluride inks",
+      "id": "concept_molecular_telluride_inks"
     },
     {
       "label": "Ge-Sb-Te (GST) Material System",
@@ -1111,9 +939,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gst_material_system",
-      "community": 6,
-      "norm_label": "ge-sb-te (gst) material system"
+      "community": 1,
+      "norm_label": "ge-sb-te (gst) material system",
+      "id": "concept_gst_material_system"
     },
     {
       "label": "Amine-Thiol Cosolvent (Ethylenediamine/Ethanedithiol)",
@@ -1124,9 +952,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_amine_thiol_cosolvent",
-      "community": 6,
-      "norm_label": "amine-thiol cosolvent (ethylenediamine/ethanedithiol)"
+      "community": 1,
+      "norm_label": "amine-thiol cosolvent (ethylenediamine/ethanedithiol)",
+      "id": "concept_amine_thiol_cosolvent"
     },
     {
       "label": "Piperidou 2025 - GST-124/Sb2Te3 Superlattices Thesis",
@@ -1137,9 +965,9 @@
       "captured_at": "2026-06-10",
       "author": "Athanasia Piperidou",
       "contributor": null,
-      "id": "paper_piperidou_gst_sb2te3_sl",
-      "community": 0,
-      "norm_label": "piperidou 2025 - gst-124/sb2te3 superlattices thesis"
+      "community": 2,
+      "norm_label": "piperidou 2025 - gst-124/sb2te3 superlattices thesis",
+      "id": "paper_piperidou_gst_sb2te3_sl"
     },
     {
       "label": "Phase-Change Superlattice",
@@ -1150,9 +978,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_superlattice",
-      "community": 0,
-      "norm_label": "phase-change superlattice"
+      "community": 2,
+      "norm_label": "phase-change superlattice",
+      "id": "concept_superlattice"
     },
     {
       "label": "Ge1Sb2Te4 (GST-124)",
@@ -1163,9 +991,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gst124",
-      "community": 0,
-      "norm_label": "ge1sb2te4 (gst-124)"
+      "community": 2,
+      "norm_label": "ge1sb2te4 (gst-124)",
+      "id": "concept_gst124"
     },
     {
       "label": "Atom Probe Tomography (APT)",
@@ -1176,9 +1004,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_atom_probe_tomography",
-      "community": 0,
-      "norm_label": "atom probe tomography (apt)"
+      "community": 2,
+      "norm_label": "atom probe tomography (apt)",
+      "id": "concept_atom_probe_tomography"
     },
     {
       "label": "Metavalent Bonding",
@@ -1189,9 +1017,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_metavalent_bonding",
-      "community": 0,
-      "norm_label": "metavalent bonding"
+      "community": 2,
+      "norm_label": "metavalent bonding",
+      "id": "concept_metavalent_bonding"
     },
     {
       "label": "Melt-Quench Switching Mechanism",
@@ -1202,9 +1030,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_melt_quench_mechanism",
-      "community": 0,
-      "norm_label": "melt-quench switching mechanism"
+      "community": 2,
+      "norm_label": "melt-quench switching mechanism",
+      "id": "concept_melt_quench_mechanism"
     },
     {
       "label": "Molecular Beam Epitaxy (MBE)",
@@ -1215,9 +1043,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_molecular_beam_epitaxy",
-      "community": 0,
-      "norm_label": "molecular beam epitaxy (mbe)"
+      "community": 2,
+      "norm_label": "molecular beam epitaxy (mbe)",
+      "id": "concept_molecular_beam_epitaxy"
     },
     {
       "label": "Bond-Confinement Hypothesis",
@@ -1228,9 +1056,9 @@
       "captured_at": "2026-06-10",
       "author": "Athanasia Piperidou",
       "contributor": null,
-      "id": "paper_piperidou_bond_confinement",
-      "community": 0,
-      "norm_label": "bond-confinement hypothesis"
+      "community": 2,
+      "norm_label": "bond-confinement hypothesis",
+      "id": "paper_piperidou_bond_confinement"
     },
     {
       "label": "Protocol for Nanoscale Thermal Mapping using AFM with PCM",
@@ -1241,9 +1069,9 @@
       "captured_at": "2026-06-17",
       "author": "Qilong Cheng; Sukumar Rajauria; Erhard Schreck; Robert Smith; Na Wang; Jim Reiner; Qing Dai; David Bogy",
       "contributor": null,
-      "id": "paper_afm_thermal_mapping_protocol",
-      "community": 8,
-      "norm_label": "protocol for nanoscale thermal mapping using afm with pcm"
+      "community": 9,
+      "norm_label": "protocol for nanoscale thermal mapping using afm with pcm",
+      "id": "paper_afm_thermal_mapping_protocol"
     },
     {
       "label": "Atomic Force Microscopy (AFM)",
@@ -1254,9 +1082,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_atomic_force_microscopy",
-      "community": 8,
-      "norm_label": "atomic force microscopy (afm)"
+      "community": 9,
+      "norm_label": "atomic force microscopy (afm)",
+      "id": "concept_atomic_force_microscopy"
     },
     {
       "label": "Nanoscale Thermal Mapping",
@@ -1267,9 +1095,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nanoscale_thermal_mapping",
-      "community": 8,
-      "norm_label": "nanoscale thermal mapping"
+      "community": 9,
+      "norm_label": "nanoscale thermal mapping",
+      "id": "concept_nanoscale_thermal_mapping"
     },
     {
       "label": "Scanning Probe Techniques (Textbook Excerpt)",
@@ -1280,9 +1108,9 @@
       "captured_at": "2026-06-16",
       "author": "Unknown (scanned textbook pages)",
       "contributor": null,
-      "id": "paper_spm_textbook",
-      "community": 8,
-      "norm_label": "scanning probe techniques (textbook excerpt)"
+      "community": 9,
+      "norm_label": "scanning probe techniques (textbook excerpt)",
+      "id": "paper_spm_textbook"
     },
     {
       "label": "Scanning Probe Microscopy (SPM)",
@@ -1293,9 +1121,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_scanning_probe_microscopy",
-      "community": 8,
-      "norm_label": "scanning probe microscopy (spm)"
+      "community": 9,
+      "norm_label": "scanning probe microscopy (spm)",
+      "id": "concept_scanning_probe_microscopy"
     },
     {
       "label": "Scanning Tunneling Microscopy (STM)",
@@ -1306,9 +1134,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_scanning_tunneling_microscopy",
-      "community": 8,
-      "norm_label": "scanning tunneling microscopy (stm)"
+      "community": 9,
+      "norm_label": "scanning tunneling microscopy (stm)",
+      "id": "concept_scanning_tunneling_microscopy"
     },
     {
       "label": "Quantum Tunneling Effect",
@@ -1319,9 +1147,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_quantum_tunneling",
-      "community": 8,
-      "norm_label": "quantum tunneling effect"
+      "community": 9,
+      "norm_label": "quantum tunneling effect",
+      "id": "concept_quantum_tunneling"
     },
     {
       "label": "Solution-Derived Ge-Sb-Se-Te Phase-Change Chalcogenide Films",
@@ -1332,9 +1160,9 @@
       "captured_at": "2026-06-17",
       "author": "Myungkoo Kang; Rashi Sharma; Cesar Blanco; Daniel Wiedeman; Quentin Altemose; Patrick E. Lynch; Gil B. J. Sop Tagne; Yifei Zhang et al.",
       "contributor": null,
-      "id": "paper_solution_derived_gesbsete",
-      "community": 6,
-      "norm_label": "solution-derived ge-sb-se-te phase-change chalcogenide films"
+      "community": 1,
+      "norm_label": "solution-derived ge-sb-se-te phase-change chalcogenide films",
+      "id": "paper_solution_derived_gesbsete"
     },
     {
       "label": "Ge2Sb2Se4Te1 (Ge-Sb-Se-Te)",
@@ -1345,9 +1173,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gesbsete",
-      "community": 6,
-      "norm_label": "ge2sb2se4te1 (ge-sb-se-te)"
+      "community": 1,
+      "norm_label": "ge2sb2se4te1 (ge-sb-se-te)",
+      "id": "concept_gesbsete"
     },
     {
       "label": "Chemical Solution Deposition",
@@ -1358,9 +1186,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_chemical_solution_deposition",
-      "community": 6,
-      "norm_label": "chemical solution deposition"
+      "community": 1,
+      "norm_label": "chemical solution deposition",
+      "id": "concept_chemical_solution_deposition"
     },
     {
       "label": "Optical Phase Change Material",
@@ -1371,9 +1199,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_optical_pcm",
-      "community": 6,
-      "norm_label": "optical phase change material"
+      "community": 1,
+      "norm_label": "optical phase change material",
+      "id": "concept_optical_pcm"
     },
     {
       "label": "Thermally Induced Nanoscale Phase Change in Cr2Ge2Te6 via STM",
@@ -1384,9 +1212,9 @@
       "captured_at": "2026-06-17",
       "author": "Dang-il Kim; Mizuki Kawaji; Hiroki Sato; Ryota Kawamura; Ryo Tamaki; Satoshi Kusaba; Yinli Wang; Yi Shuang; Yuji Sutou; Ikufumi Katayama; Jun Takeda",
       "contributor": null,
-      "id": "paper_crgt_stm",
-      "community": 1,
-      "norm_label": "thermally induced nanoscale phase change in cr2ge2te6 via stm"
+      "community": 6,
+      "norm_label": "thermally induced nanoscale phase change in cr2ge2te6 via stm",
+      "id": "paper_crgt_stm"
     },
     {
       "label": "Cr2Ge2Te6 (CrGT)",
@@ -1397,9 +1225,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_cr2ge2te6",
-      "community": 1,
-      "norm_label": "cr2ge2te6 (crgt)"
+      "community": 6,
+      "norm_label": "cr2ge2te6 (crgt)",
+      "id": "concept_cr2ge2te6"
     },
     {
       "label": "Scanning Tunneling Spectroscopy (STS)",
@@ -1410,9 +1238,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_scanning_tunneling_spectroscopy",
-      "community": 1,
-      "norm_label": "scanning tunneling spectroscopy (sts)"
+      "community": 6,
+      "norm_label": "scanning tunneling spectroscopy (sts)",
+      "id": "concept_scanning_tunneling_spectroscopy"
     },
     {
       "label": "Amorphous-to-Crystalline Phase Transition",
@@ -1423,9 +1251,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_amorphous_crystalline_transition",
-      "community": 1,
-      "norm_label": "amorphous-to-crystalline phase transition"
+      "community": 6,
+      "norm_label": "amorphous-to-crystalline phase transition",
+      "id": "concept_amorphous_crystalline_transition"
     },
     {
       "label": "TEM of Sb2Te3 Thin Films and GeTe/Sb2Te3 Superlattices (Momand)",
@@ -1436,9 +1264,9 @@
       "captured_at": "2026-06-17",
       "author": "Jamo Momand",
       "contributor": null,
-      "id": "paper_tem_sb2te3_superlattices",
-      "community": 0,
-      "norm_label": "tem of sb2te3 thin films and gete/sb2te3 superlattices (momand)"
+      "community": 2,
+      "norm_label": "tem of sb2te3 thin films and gete/sb2te3 superlattices (momand)",
+      "id": "paper_tem_sb2te3_superlattices"
     },
     {
       "label": "Transmission Electron Microscopy (TEM)",
@@ -1449,9 +1277,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_transmission_electron_microscopy",
       "community": 0,
-      "norm_label": "transmission electron microscopy (tem)"
+      "norm_label": "transmission electron microscopy (tem)",
+      "id": "concept_transmission_electron_microscopy"
     },
     {
       "label": "Interfacial Phase Change Memory (IPCM)",
@@ -1462,9 +1290,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_interfacial_phase_change_memory",
-      "community": 0,
-      "norm_label": "interfacial phase change memory (ipcm)"
+      "community": 2,
+      "norm_label": "interfacial phase change memory (ipcm)",
+      "id": "concept_interfacial_phase_change_memory"
     },
     {
       "label": "Van der Waals Gap / Bonding",
@@ -1475,9 +1303,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_van_der_waals_gap",
-      "community": 0,
-      "norm_label": "van der waals gap / bonding"
+      "community": 2,
+      "norm_label": "van der waals gap / bonding",
+      "id": "concept_van_der_waals_gap"
     },
     {
       "label": "Widmann 2026 - GST-124/In2Te3 Superlattices Thesis",
@@ -1488,9 +1316,9 @@
       "captured_at": "2026-06-10",
       "author": "Ricco Widmann",
       "contributor": null,
-      "id": "paper_widmann_gst_in2te3_sl",
-      "community": 0,
-      "norm_label": "widmann 2026 - gst-124/in2te3 superlattices thesis"
+      "community": 2,
+      "norm_label": "widmann 2026 - gst-124/in2te3 superlattices thesis",
+      "id": "paper_widmann_gst_in2te3_sl"
     },
     {
       "label": "In2Te3 (Covalent Non-PCM)",
@@ -1501,9 +1329,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_in2te3",
-      "community": 0,
-      "norm_label": "in2te3 (covalent non-pcm)"
+      "community": 2,
+      "norm_label": "in2te3 (covalent non-pcm)",
+      "id": "concept_in2te3"
     },
     {
       "label": "Power-Time Effect (PTE) Diagram",
@@ -1514,9 +1342,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pte_diagram",
-      "community": 0,
-      "norm_label": "power-time effect (pte) diagram"
+      "community": 6,
+      "norm_label": "power-time effect (pte) diagram",
+      "id": "concept_pte_diagram"
     },
     {
       "label": "Metavalent-Covalent Interface",
@@ -1527,9 +1355,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_metavalent_covalent_interface",
-      "community": 0,
-      "norm_label": "metavalent-covalent interface"
+      "community": 2,
+      "norm_label": "metavalent-covalent interface",
+      "id": "concept_metavalent_covalent_interface"
     },
     {
       "label": "Wuttig & Yamada 2007 - PCM Review (Nature Materials)",
@@ -1540,9 +1368,9 @@
       "captured_at": "2026-05-25",
       "author": "Matthias Wuttig, Noboru Yamada",
       "contributor": null,
-      "id": "paper_wuttig_yamada_2007",
-      "community": 3,
-      "norm_label": "wuttig & yamada 2007 - pcm review (nature materials)"
+      "community": 1,
+      "norm_label": "wuttig & yamada 2007 - pcm review (nature materials)",
+      "id": "paper_wuttig_yamada_2007"
     },
     {
       "label": "Octahedral p-Bonded Crystal Structure",
@@ -1553,9 +1381,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_octahedral_p_bonding",
-      "community": 3,
-      "norm_label": "octahedral p-bonded crystal structure"
+      "community": 1,
+      "norm_label": "octahedral p-bonded crystal structure",
+      "id": "concept_octahedral_p_bonding"
     },
     {
       "label": "Kolobov Umbrella Flip (tetrahedral-octahedral)",
@@ -1566,9 +1394,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_umbrella_flip",
-      "community": 3,
-      "norm_label": "kolobov umbrella flip (tetrahedral-octahedral)"
+      "community": 6,
+      "norm_label": "kolobov umbrella flip (tetrahedral-octahedral)",
+      "id": "concept_umbrella_flip"
     },
     {
       "label": "PCM Material Design Rules",
@@ -1579,9 +1407,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pcm_design_rules",
-      "community": 3,
-      "norm_label": "pcm material design rules"
+      "community": 1,
+      "norm_label": "pcm material design rules",
+      "id": "concept_pcm_design_rules"
     },
     {
       "label": "Rewritable Optical Data Storage (CD/DVD/Blu-ray)",
@@ -1592,9 +1420,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_optical_data_storage",
-      "community": 3,
-      "norm_label": "rewritable optical data storage (cd/dvd/blu-ray)"
+      "community": 1,
+      "norm_label": "rewritable optical data storage (cd/dvd/blu-ray)",
+      "id": "concept_optical_data_storage"
     },
     {
       "label": "Interface-Controlled Thermal Properties of Ultra-Thin Chalcogenide PCM Devices",
@@ -1605,9 +1433,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "paper_interface_thermal_properties",
-      "community": 4,
-      "norm_label": "interface-controlled thermal properties of ultra-thin chalcogenide pcm devices"
+      "community": 5,
+      "norm_label": "interface-controlled thermal properties of ultra-thin chalcogenide pcm devices",
+      "id": "paper_interface_thermal_properties"
     },
     {
       "label": "Interface-Controlled Thermal Properties",
@@ -1618,9 +1446,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_interface_thermal_resistance",
-      "community": 4,
-      "norm_label": "interface-controlled thermal properties"
+      "community": 5,
+      "norm_label": "interface-controlled thermal properties",
+      "id": "concept_interface_thermal_resistance"
     },
     {
       "label": "Analysis of Thermal Stability of PCMs and Energy Storage Efficiency",
@@ -1631,9 +1459,9 @@
       "captured_at": "2026-06-17",
       "author": "Jayakrishnan V M; Sreekanth S; Ganesh J G",
       "contributor": null,
-      "id": "paper_pcm_thermal_stability",
-      "community": 1,
-      "norm_label": "analysis of thermal stability of pcms and energy storage efficiency"
+      "community": 4,
+      "norm_label": "analysis of thermal stability of pcms and energy storage efficiency",
+      "id": "paper_pcm_thermal_stability"
     },
     {
       "label": "Microencapsulation of PCMs",
@@ -1644,9 +1472,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_microencapsulation",
-      "community": 1,
-      "norm_label": "microencapsulation of pcms"
+      "community": 4,
+      "norm_label": "microencapsulation of pcms",
+      "id": "concept_microencapsulation"
     },
     {
       "label": "PCM Thermal Stability",
@@ -1657,9 +1485,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pcm_thermal_stability",
-      "community": 1,
-      "norm_label": "pcm thermal stability"
+      "community": 4,
+      "norm_label": "pcm thermal stability",
+      "id": "concept_pcm_thermal_stability"
     },
     {
       "label": "Atomic Force Microscopy for Cross-Disciplinary Materials Research",
@@ -1670,9 +1498,9 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "id": "paper_afm_crossdisciplinary",
-      "community": 8,
-      "norm_label": "atomic force microscopy for cross-disciplinary materials research"
+      "community": 9,
+      "norm_label": "atomic force microscopy for cross-disciplinary materials research",
+      "id": "paper_afm_crossdisciplinary"
     },
     {
       "label": "Optical Switching of GeSbTe-based Phase Change Superlattices with In2Te3 (Widmann Bachelor Thesis)",
@@ -1683,9 +1511,9 @@
       "captured_at": null,
       "author": "Ricco Widmann",
       "contributor": null,
-      "id": "files_bachelorarbeit_final_rw_final_260513_130841",
-      "community": 0,
-      "norm_label": "optical switching of gesbte-based phase change superlattices with in2te3 (widmann bachelor thesis)"
+      "community": 2,
+      "norm_label": "optical switching of gesbte-based phase change superlattices with in2te3 (widmann bachelor thesis)",
+      "id": "files_bachelorarbeit_final_rw_final_260513_130841"
     },
     {
       "label": "Phase-change materials for rewriteable data storage (Wuttig & Yamada, Nature Materials 2007)",
@@ -1696,9 +1524,9 @@
       "captured_at": null,
       "author": "Matthias Wuttig; Noboru Yamada",
       "contributor": null,
-      "id": "files_nmat2009",
-      "community": 3,
-      "norm_label": "phase-change materials for rewriteable data storage (wuttig & yamada, nature materials 2007)"
+      "community": 1,
+      "norm_label": "phase-change materials for rewriteable data storage (wuttig & yamada, nature materials 2007)",
+      "id": "files_nmat2009"
     },
     {
       "label": "Laser-induced phase transitions of Ge2Sb2Te5 thin films (Chu et al., Optics Express 2010)",
@@ -1709,9 +1537,9 @@
       "captured_at": null,
       "author": "Cheng Hung Chu; Din Ping Tsai; Masud Mansuripur",
       "contributor": null,
-      "id": "files_oe_18_17_18383",
-      "community": 3,
-      "norm_label": "laser-induced phase transitions of ge2sb2te5 thin films (chu et al., optics express 2010)"
+      "community": 1,
+      "norm_label": "laser-induced phase transitions of ge2sb2te5 thin films (chu et al., optics express 2010)",
+      "id": "files_oe_18_17_18383"
     },
     {
       "label": "GeSbTe (GST) alloy family",
@@ -1722,9 +1550,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gst",
-      "community": 0,
-      "norm_label": "gesbte (gst) alloy family"
+      "community": 1,
+      "norm_label": "gesbte (gst) alloy family",
+      "id": "concept_gst"
     },
     {
       "label": "Ge1Sb2Te4 (GST-124)",
@@ -1735,9 +1563,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ge1sb2te4",
-      "community": 0,
-      "norm_label": "ge1sb2te4 (gst-124)"
+      "community": 1,
+      "norm_label": "ge1sb2te4 (gst-124)",
+      "id": "concept_ge1sb2te4"
     },
     {
       "label": "Ag5In5Sb60Te30 (AIST)",
@@ -1748,9 +1576,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_aist",
-      "community": 3,
-      "norm_label": "ag5in5sb60te30 (aist)"
+      "community": 1,
+      "norm_label": "ag5in5sb60te30 (aist)",
+      "id": "concept_aist"
     },
     {
       "label": "Amorphous phase",
@@ -1761,9 +1589,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_amorphous_phase",
-      "community": 3,
-      "norm_label": "amorphous phase"
+      "community": 6,
+      "norm_label": "amorphous phase",
+      "id": "concept_amorphous_phase"
     },
     {
       "label": "Crystalline phase",
@@ -1774,9 +1602,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_crystalline_phase",
-      "community": 3,
-      "norm_label": "crystalline phase"
+      "community": 6,
+      "norm_label": "crystalline phase",
+      "id": "concept_crystalline_phase"
     },
     {
       "label": "Crystallization",
@@ -1787,9 +1615,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_crystallization",
-      "community": 3,
-      "norm_label": "crystallization"
+      "community": 6,
+      "norm_label": "crystallization",
+      "id": "concept_crystallization"
     },
     {
       "label": "Amorphization",
@@ -1800,9 +1628,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_amorphization",
-      "community": 3,
-      "norm_label": "amorphization"
+      "community": 6,
+      "norm_label": "amorphization",
+      "id": "concept_amorphization"
     },
     {
       "label": "Melt-quenching",
@@ -1813,9 +1641,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_melt_quenching",
-      "community": 3,
-      "norm_label": "melt-quenching"
+      "community": 6,
+      "norm_label": "melt-quenching",
+      "id": "concept_melt_quenching"
     },
     {
       "label": "Van der Waals (vdW) interface",
@@ -1826,9 +1654,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_van_der_waals_interface",
-      "community": 0,
-      "norm_label": "van der waals (vdw) interface"
+      "community": 2,
+      "norm_label": "van der waals (vdw) interface",
+      "id": "concept_van_der_waals_interface"
     },
     {
       "label": "Electro-thermal confinement",
@@ -1839,9 +1667,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_electrothermal_confinement",
-      "community": 0,
-      "norm_label": "electro-thermal confinement"
+      "community": 2,
+      "norm_label": "electro-thermal confinement",
+      "id": "concept_electrothermal_confinement"
     },
     {
       "label": "Crystal-crystal phase transition mechanism",
@@ -1852,9 +1680,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_crystal_crystal_transition",
-      "community": 3,
-      "norm_label": "crystal-crystal phase transition mechanism"
+      "community": 2,
+      "norm_label": "crystal-crystal phase transition mechanism",
+      "id": "concept_crystal_crystal_transition"
     },
     {
       "label": "Optical contrast (reflectivity difference)",
@@ -1865,9 +1693,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_optical_contrast",
-      "community": 3,
-      "norm_label": "optical contrast (reflectivity difference)"
+      "community": 1,
+      "norm_label": "optical contrast (reflectivity difference)",
+      "id": "concept_optical_contrast"
     },
     {
       "label": "Rocksalt-like crystal structure with vacancies",
@@ -1878,9 +1706,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_rocksalt_structure",
-      "community": 3,
-      "norm_label": "rocksalt-like crystal structure with vacancies"
+      "community": 6,
+      "norm_label": "rocksalt-like crystal structure with vacancies",
+      "id": "concept_rocksalt_structure"
     },
     {
       "label": "Time-Temperature-Transformation (TTT) diagram",
@@ -1891,9 +1719,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ttt_diagram",
-      "community": 3,
-      "norm_label": "time-temperature-transformation (ttt) diagram"
+      "community": 6,
+      "norm_label": "time-temperature-transformation (ttt) diagram",
+      "id": "concept_ttt_diagram"
     },
     {
       "label": "Phase-Change Random-Access Memory (PCRAM)",
@@ -1904,9 +1732,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pcram",
-      "community": 1,
-      "norm_label": "phase-change random-access memory (pcram)"
+      "community": 4,
+      "norm_label": "phase-change random-access memory (pcram)",
+      "id": "concept_pcram"
     },
     {
       "label": "Storage-Class Memory (SCM)",
@@ -1917,9 +1745,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_storage_class_memory",
-      "community": 1,
-      "norm_label": "storage-class memory (scm)"
+      "community": 4,
+      "norm_label": "storage-class memory (scm)",
+      "id": "concept_storage_class_memory"
     },
     {
       "label": "Phase-change (thermal) lithography",
@@ -1930,9 +1758,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_phase_change_lithography",
-      "community": 3,
-      "norm_label": "phase-change (thermal) lithography"
+      "community": 1,
+      "norm_label": "phase-change (thermal) lithography",
+      "id": "concept_phase_change_lithography"
     },
     {
       "label": "Laser Switching Setup (LSS)",
@@ -1943,9 +1771,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "files_bachelorarbeit_laser_switching_setup",
-      "community": 0,
-      "norm_label": "laser switching setup (lss)"
+      "community": 6,
+      "norm_label": "laser switching setup (lss)",
+      "id": "files_bachelorarbeit_laser_switching_setup"
     },
     {
       "label": "Optical Microscopy (OM)",
@@ -1956,9 +1784,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_optical_microscopy",
-      "community": 3,
-      "norm_label": "optical microscopy (om)"
+      "community": 1,
+      "norm_label": "optical microscopy (om)",
+      "id": "concept_optical_microscopy"
     },
     {
       "label": "Scanning Electron Microscopy (SEM)",
@@ -1969,9 +1797,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sem",
-      "community": 11,
-      "norm_label": "scanning electron microscopy (sem)"
+      "community": 0,
+      "norm_label": "scanning electron microscopy (sem)",
+      "id": "concept_sem"
     },
     {
       "label": "Atomic Force Microscopy (AFM)",
@@ -1982,9 +1810,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_afm",
-      "community": 3,
-      "norm_label": "atomic force microscopy (afm)"
+      "community": 1,
+      "norm_label": "atomic force microscopy (afm)",
+      "id": "concept_afm"
     },
     {
       "label": "X-ray diffraction / reflectometry (XRD/XRR)",
@@ -1995,9 +1823,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_xrd_xrr",
       "community": 12,
-      "norm_label": "x-ray diffraction / reflectometry (xrd/xrr)"
+      "norm_label": "x-ray diffraction / reflectometry (xrd/xrr)",
+      "id": "concept_xrd_xrr"
     },
     {
       "label": "Extended X-ray Absorption Fine Structure (EXAFS)",
@@ -2008,9 +1836,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_exafs",
-      "community": 3,
-      "norm_label": "extended x-ray absorption fine structure (exafs)"
+      "community": 1,
+      "norm_label": "extended x-ray absorption fine structure (exafs)",
+      "id": "concept_exafs"
     },
     {
       "label": "Selective chemical etching (NaOH)",
@@ -2021,9 +1849,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_selective_chemical_etching",
-      "community": 3,
-      "norm_label": "selective chemical etching (naoh)"
+      "community": 1,
+      "norm_label": "selective chemical etching (naoh)",
+      "id": "concept_selective_chemical_etching"
     },
     {
       "label": "Simpson et al. 2011 GeTe/Sb2Te3 superlattice breakthrough",
@@ -2034,9 +1862,9 @@
       "captured_at": null,
       "author": "R. E. Simpson et al.",
       "contributor": null,
-      "id": "files_bachelorarbeit_simpson_2011",
-      "community": 0,
-      "norm_label": "simpson et al. 2011 gete/sb2te3 superlattice breakthrough"
+      "community": 2,
+      "norm_label": "simpson et al. 2011 gete/sb2te3 superlattice breakthrough",
+      "id": "files_bachelorarbeit_simpson_2011"
     },
     {
       "label": "Khan et al. electro-thermal confinement studies (2021/2022)",
@@ -2047,9 +1875,9 @@
       "captured_at": null,
       "author": "Khan et al.",
       "contributor": null,
-      "id": "files_bachelorarbeit_khan_2021",
-      "community": 0,
-      "norm_label": "khan et al. electro-thermal confinement studies (2021/2022)"
+      "community": 2,
+      "norm_label": "khan et al. electro-thermal confinement studies (2021/2022)",
+      "id": "files_bachelorarbeit_khan_2021"
     },
     {
       "label": "Piperidou Master's thesis on Sb2Te3/Ge1Sb2Te4 superlattices",
@@ -2060,9 +1888,9 @@
       "captured_at": null,
       "author": "Athanasia Piperidou",
       "contributor": null,
-      "id": "files_bachelorarbeit_piperidou_thesis",
-      "community": 0,
-      "norm_label": "piperidou master's thesis on sb2te3/ge1sb2te4 superlattices"
+      "community": 1,
+      "norm_label": "piperidou master's thesis on sb2te3/ge1sb2te4 superlattices",
+      "id": "files_bachelorarbeit_piperidou_thesis"
     },
     {
       "label": "Tominaga et al. crystal-crystal switching proposal",
@@ -2073,9 +1901,9 @@
       "captured_at": null,
       "author": "J. Tominaga et al.",
       "contributor": null,
-      "id": "files_bachelorarbeit_tominaga",
-      "community": 3,
-      "norm_label": "tominaga et al. crystal-crystal switching proposal"
+      "community": 2,
+      "norm_label": "tominaga et al. crystal-crystal switching proposal",
+      "id": "files_bachelorarbeit_tominaga"
     },
     {
       "label": "Kolobov et al. umbrella-flip phase-change mechanism (Nature Mater. 2004)",
@@ -2086,9 +1914,9 @@
       "captured_at": null,
       "author": "A. V. Kolobov et al.",
       "contributor": null,
-      "id": "files_bachelorarbeit_kolobov",
-      "community": 3,
-      "norm_label": "kolobov et al. umbrella-flip phase-change mechanism (nature mater. 2004)"
+      "community": 6,
+      "norm_label": "kolobov et al. umbrella-flip phase-change mechanism (nature mater. 2004)",
+      "id": "files_bachelorarbeit_kolobov"
     },
     {
       "label": "Electronic Switching in Phase-Change Materials (Bruns Dissertation)",
@@ -2099,9 +1927,9 @@
       "captured_at": null,
       "author": "Gunnar Bruns",
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms",
-      "community": 4,
-      "norm_label": "electronic switching in phase-change materials (bruns dissertation)"
+      "community": 5,
+      "norm_label": "electronic switching in phase-change materials (bruns dissertation)",
+      "id": "files_doctorarbeit_gunnarbruns_pcms"
     },
     {
       "label": "Endurance of Chalcogenide Optical Phase Change Materials: A Review",
@@ -2112,9 +1940,9 @@
       "captured_at": null,
       "author": "Louis Martin-Monier et al.",
       "contributor": null,
-      "id": "files_ome_12_6_2145",
-      "community": 9,
-      "norm_label": "endurance of chalcogenide optical phase change materials: a review"
+      "community": 10,
+      "norm_label": "endurance of chalcogenide optical phase change materials: a review",
+      "id": "files_ome_12_6_2145"
     },
     {
       "label": "First-Principles Thermodynamic Analysis of Ternary Chalcogenide Phase Change Materials",
@@ -2125,9 +1953,9 @@
       "captured_at": null,
       "author": "Felix Adams, Ichiro Takeuchi, Carlos Rios Ocampo, Yifei Mo",
       "contributor": null,
-      "id": "files_firstprinciplespcmthermo",
-      "community": 1,
-      "norm_label": "first-principles thermodynamic analysis of ternary chalcogenide phase change materials"
+      "community": 4,
+      "norm_label": "first-principles thermodynamic analysis of ternary chalcogenide phase change materials",
+      "id": "files_firstprinciplespcmthermo"
     },
     {
       "label": "Sb2Se3 (Antimony Selenide)",
@@ -2138,9 +1966,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_sb2se3",
-      "community": 9,
-      "norm_label": "sb2se3 (antimony selenide)"
+      "community": 10,
+      "norm_label": "sb2se3 (antimony selenide)",
+      "id": "concept_sb2se3"
     },
     {
       "label": "Ge2Sb2Se4Te (GSST)",
@@ -2151,9 +1979,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_gsst",
-      "community": 9,
-      "norm_label": "ge2sb2se4te (gsst)"
+      "community": 10,
+      "norm_label": "ge2sb2se4te (gsst)",
+      "id": "concept_gsst"
     },
     {
       "label": "Bi2Te3",
@@ -2164,9 +1992,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_bi2te3",
-      "community": 10,
-      "norm_label": "bi2te3"
+      "community": 11,
+      "norm_label": "bi2te3",
+      "id": "concept_bi2te3"
     },
     {
       "label": "Crystallization Temperature",
@@ -2177,9 +2005,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_crystallization_temperature",
-      "community": 9,
-      "norm_label": "crystallization temperature"
+      "community": 10,
+      "norm_label": "crystallization temperature",
+      "id": "concept_crystallization_temperature"
     },
     {
       "label": "Activation Energy of Charge Transport",
@@ -2190,9 +2018,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_activation_energy",
-      "community": 4,
-      "norm_label": "activation energy of charge transport"
+      "community": 5,
+      "norm_label": "activation energy of charge transport",
+      "id": "concept_activation_energy"
     },
     {
       "label": "Endurance / Cycling Durability",
@@ -2203,9 +2031,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_endurance_cycling",
-      "community": 9,
-      "norm_label": "endurance / cycling durability"
+      "community": 10,
+      "norm_label": "endurance / cycling durability",
+      "id": "concept_endurance_cycling"
     },
     {
       "label": "Oxidation of Chalcogenides",
@@ -2216,9 +2044,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_oxidation",
-      "community": 9,
-      "norm_label": "oxidation of chalcogenides"
+      "community": 10,
+      "norm_label": "oxidation of chalcogenides",
+      "id": "concept_oxidation"
     },
     {
       "label": "Lightweight-Element Doping (N, O, C)",
@@ -2229,9 +2057,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_doping",
-      "community": 9,
-      "norm_label": "lightweight-element doping (n, o, c)"
+      "community": 10,
+      "norm_label": "lightweight-element doping (n, o, c)",
+      "id": "concept_doping"
     },
     {
       "label": "Void Formation / Failure Mechanisms",
@@ -2242,9 +2070,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_void_formation",
-      "community": 9,
-      "norm_label": "void formation / failure mechanisms"
+      "community": 10,
+      "norm_label": "void formation / failure mechanisms",
+      "id": "concept_void_formation"
     },
     {
       "label": "Density Functional Theory (DFT) / First-Principles Calculations",
@@ -2255,9 +2083,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_dft",
-      "community": 1,
-      "norm_label": "density functional theory (dft) / first-principles calculations"
+      "community": 4,
+      "norm_label": "density functional theory (dft) / first-principles calculations",
+      "id": "concept_dft"
     },
     {
       "label": "Ostwald's Rule (Polymorph-Mediated Crystallization)",
@@ -2268,9 +2096,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ostwald_rule",
-      "community": 1,
-      "norm_label": "ostwald's rule (polymorph-mediated crystallization)"
+      "community": 6,
+      "norm_label": "ostwald's rule (polymorph-mediated crystallization)",
+      "id": "concept_ostwald_rule"
     },
     {
       "label": "Metastable Rock-Salt (RS) Polymorph",
@@ -2281,9 +2109,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_rocksalt_phase",
-      "community": 1,
-      "norm_label": "metastable rock-salt (rs) polymorph"
+      "community": 6,
+      "norm_label": "metastable rock-salt (rs) polymorph",
+      "id": "concept_rocksalt_phase"
     },
     {
       "label": "Thermodynamic Polymorph Screening",
@@ -2294,9 +2122,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_polymorph_screening",
-      "community": 1,
-      "norm_label": "thermodynamic polymorph screening"
+      "community": 4,
+      "norm_label": "thermodynamic polymorph screening",
+      "id": "concept_polymorph_screening"
     },
     {
       "label": "Materials Project (MP) Database",
@@ -2307,9 +2135,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_materials_project",
-      "community": 1,
-      "norm_label": "materials project (mp) database"
+      "community": 4,
+      "norm_label": "materials project (mp) database",
+      "id": "concept_materials_project"
     },
     {
       "label": "Binary-Binary Tie Line Mixtures",
@@ -2320,9 +2148,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_tie_line",
-      "community": 6,
-      "norm_label": "binary-binary tie line mixtures"
+      "community": 4,
+      "norm_label": "binary-binary tie line mixtures",
+      "id": "concept_tie_line"
     },
     {
       "label": "Ab Initio Molecular Dynamics (AIMD)",
@@ -2333,9 +2161,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_aimd",
-      "community": 1,
-      "norm_label": "ab initio molecular dynamics (aimd)"
+      "community": 6,
+      "norm_label": "ab initio molecular dynamics (aimd)",
+      "id": "concept_aimd"
     },
     {
       "label": "Pulsed Electrical Tester (PET)",
@@ -2346,9 +2174,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms_pet",
-      "community": 4,
-      "norm_label": "pulsed electrical tester (pet)"
+      "community": 5,
+      "norm_label": "pulsed electrical tester (pet)",
+      "id": "files_doctorarbeit_gunnarbruns_pcms_pet"
     },
     {
       "label": "Mushroom Cell PCM Device",
@@ -2359,9 +2187,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms_mushroom_cell",
-      "community": 4,
-      "norm_label": "mushroom cell pcm device"
+      "community": 5,
+      "norm_label": "mushroom cell pcm device",
+      "id": "files_doctorarbeit_gunnarbruns_pcms_mushroom_cell"
     },
     {
       "label": "Van der Pauw Sheet Resistance Measurement",
@@ -2372,9 +2200,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms_vdp",
-      "community": 4,
-      "norm_label": "van der pauw sheet resistance measurement"
+      "community": 5,
+      "norm_label": "van der pauw sheet resistance measurement",
+      "id": "files_doctorarbeit_gunnarbruns_pcms_vdp"
     },
     {
       "label": "Ovshinsky (1968) Reversible Electrical Switching in Disordered Structures",
@@ -2385,9 +2213,9 @@
       "captured_at": null,
       "author": "S. R. Ovshinsky",
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms_ovshinsky1968",
-      "community": 4,
-      "norm_label": "ovshinsky (1968) reversible electrical switching in disordered structures"
+      "community": 5,
+      "norm_label": "ovshinsky (1968) reversible electrical switching in disordered structures",
+      "id": "files_doctorarbeit_gunnarbruns_pcms_ovshinsky1968"
     },
     {
       "label": "Boniardi (2009) Drift in Ge2Sb2Te5",
@@ -2398,9 +2226,9 @@
       "captured_at": null,
       "author": "M. Boniardi",
       "contributor": null,
-      "id": "files_doctorarbeit_gunnarbruns_pcms_boniardi2009",
-      "community": 4,
-      "norm_label": "boniardi (2009) drift in ge2sb2te5"
+      "community": 5,
+      "norm_label": "boniardi (2009) drift in ge2sb2te5",
+      "id": "files_doctorarbeit_gunnarbruns_pcms_boniardi2009"
     },
     {
       "label": "Hegedus & Elliott (2008) Fast Crystallization of Ge-Sb-Te",
@@ -2411,9 +2239,9 @@
       "captured_at": null,
       "author": "J. Hegedus, S. R. Elliott",
       "contributor": null,
-      "id": "files_firstprinciplespcmthermo_hegedus_elliott",
-      "community": 1,
-      "norm_label": "hegedus & elliott (2008) fast crystallization of ge-sb-te"
+      "community": 4,
+      "norm_label": "hegedus & elliott (2008) fast crystallization of ge-sb-te",
+      "id": "files_firstprinciplespcmthermo_hegedus_elliott"
     },
     {
       "label": "Review: The Plasmonic Phase-Change Material In3SbTe2 for Nanophotonics",
@@ -2424,9 +2252,9 @@
       "captured_at": null,
       "author": "Lukas Conrads, Matthias Wuttig, Dmitry N. Chigrin, Thomas Taubner",
       "contributor": null,
-      "id": "files_the_plasmonic_pcm_in3sbte2_for_nanophotonics_review",
-      "community": 2,
-      "norm_label": "review: the plasmonic phase-change material in3sbte2 for nanophotonics"
+      "community": 3,
+      "norm_label": "review: the plasmonic phase-change material in3sbte2 for nanophotonics",
+      "id": "files_the_plasmonic_pcm_in3sbte2_for_nanophotonics_review"
     },
     {
       "label": "Plasmonic Phase-Change Material",
@@ -2437,9 +2265,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_plasmonic_pcm",
-      "community": 2,
-      "norm_label": "plasmonic phase-change material"
+      "community": 3,
+      "norm_label": "plasmonic phase-change material",
+      "id": "concept_plasmonic_pcm"
     },
     {
       "label": "Nanophotonics",
@@ -2450,9 +2278,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nanophotonics",
-      "community": 2,
-      "norm_label": "nanophotonics"
+      "community": 3,
+      "norm_label": "nanophotonics",
+      "id": "concept_nanophotonics"
     },
     {
       "label": "Metasurface",
@@ -2463,9 +2291,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_metasurface",
-      "community": 2,
-      "norm_label": "metasurface"
+      "community": 3,
+      "norm_label": "metasurface",
+      "id": "concept_metasurface"
     },
     {
       "label": "Nanoantenna",
@@ -2476,9 +2304,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_nanoantenna",
-      "community": 2,
-      "norm_label": "nanoantenna"
+      "community": 3,
+      "norm_label": "nanoantenna",
+      "id": "concept_nanoantenna"
     },
     {
       "label": "Negative Permittivity (Plasmonic Behavior)",
@@ -2489,9 +2317,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_negative_permittivity",
-      "community": 2,
-      "norm_label": "negative permittivity (plasmonic behavior)"
+      "community": 3,
+      "norm_label": "negative permittivity (plasmonic behavior)",
+      "id": "concept_negative_permittivity"
     },
     {
       "label": "Quantum Theory of Atoms in Molecules (QTAIM) Bonding Map",
@@ -2502,9 +2330,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_qtaim",
-      "community": 2,
-      "norm_label": "quantum theory of atoms in molecules (qtaim) bonding map"
+      "community": 3,
+      "norm_label": "quantum theory of atoms in molecules (qtaim) bonding map",
+      "id": "concept_qtaim"
     },
     {
       "label": "Ge-Sb-Te (GST) Alloys",
@@ -2515,9 +2343,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ge_sb_te",
-      "community": 2,
-      "norm_label": "ge-sb-te (gst) alloys"
+      "community": 3,
+      "norm_label": "ge-sb-te (gst) alloys",
+      "id": "concept_ge_sb_te"
     },
     {
       "label": "Direct Laser Writing / Optical Programming",
@@ -2528,9 +2356,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_direct_laser_writing",
-      "community": 2,
-      "norm_label": "direct laser writing / optical programming"
+      "community": 3,
+      "norm_label": "direct laser writing / optical programming",
+      "id": "concept_direct_laser_writing"
     },
     {
       "label": "Geometric Phase Metasurface",
@@ -2541,9 +2369,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_geometric_phase_metasurface",
-      "community": 2,
-      "norm_label": "geometric phase metasurface"
+      "community": 3,
+      "norm_label": "geometric phase metasurface",
+      "id": "concept_geometric_phase_metasurface"
     },
     {
       "label": "Emissivity-Shaping / Thermal Emission Control",
@@ -2554,9 +2382,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_emissivity_shaping",
-      "community": 2,
-      "norm_label": "emissivity-shaping / thermal emission control"
+      "community": 3,
+      "norm_label": "emissivity-shaping / thermal emission control",
+      "id": "concept_emissivity_shaping"
     },
     {
       "label": "Polaritons (Surface Plasmon/Phonon Polaritons)",
@@ -2567,9 +2395,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_polariton",
-      "community": 2,
-      "norm_label": "polaritons (surface plasmon/phonon polaritons)"
+      "community": 3,
+      "norm_label": "polaritons (surface plasmon/phonon polaritons)",
+      "id": "concept_polariton"
     },
     {
       "label": "Scattering-type Scanning Near-field Optical Microscopy (s-SNOM)",
@@ -2580,9 +2408,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_s_snom",
-      "community": 2,
-      "norm_label": "scattering-type scanning near-field optical microscopy (s-snom)"
+      "community": 3,
+      "norm_label": "scattering-type scanning near-field optical microscopy (s-snom)",
+      "id": "concept_s_snom"
     },
     {
       "label": "Split-Ring Resonator (SRR)",
@@ -2593,9 +2421,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_split_ring_resonator",
-      "community": 2,
-      "norm_label": "split-ring resonator (srr)"
+      "community": 3,
+      "norm_label": "split-ring resonator (srr)",
+      "id": "concept_split_ring_resonator"
     },
     {
       "label": "VO2 (Vanadium Dioxide, Insulator-to-Metal Transition)",
@@ -2606,9 +2434,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_vo2",
-      "community": 2,
-      "norm_label": "vo2 (vanadium dioxide, insulator-to-metal transition)"
+      "community": 3,
+      "norm_label": "vo2 (vanadium dioxide, insulator-to-metal transition)",
+      "id": "concept_vo2"
     },
     {
       "label": "Mid-Infrared Spectral Range",
@@ -2619,9 +2447,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_mid_infrared",
-      "community": 2,
-      "norm_label": "mid-infrared spectral range"
+      "community": 3,
+      "norm_label": "mid-infrared spectral range",
+      "id": "concept_mid_infrared"
     },
     {
       "label": "Investigating Interfacial Mechanisms and Switching Behavior in Ge1Sb2Te4/Sb2Te3 Superlattices (MSc Thesis)",
@@ -2632,9 +2460,9 @@
       "captured_at": null,
       "author": "Athanasia Piperidou",
       "contributor": "Matthias Wuttig, Joachim Mayer",
-      "id": "files_ma_athanasia_piperidou_final_thesis",
-      "community": 0,
-      "norm_label": "investigating interfacial mechanisms and switching behavior in ge1sb2te4/sb2te3 superlattices (msc thesis)"
+      "community": 2,
+      "norm_label": "investigating interfacial mechanisms and switching behavior in ge1sb2te4/sb2te3 superlattices (msc thesis)",
+      "id": "files_ma_athanasia_piperidou_final_thesis"
     },
     {
       "label": "Probability of Multiple Events (PME)",
@@ -2645,9 +2473,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_pme",
-      "community": 0,
-      "norm_label": "probability of multiple events (pme)"
+      "community": 2,
+      "norm_label": "probability of multiple events (pme)",
+      "id": "concept_pme"
     },
     {
       "label": "Bond Confinement Effect",
@@ -2658,9 +2486,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_bond_confinement",
-      "community": 0,
-      "norm_label": "bond confinement effect"
+      "community": 2,
+      "norm_label": "bond confinement effect",
+      "id": "concept_bond_confinement"
     },
     {
       "label": "Laser Switching Setup (LSS)",
@@ -2671,9 +2499,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_laser_switching_setup",
-      "community": 2,
-      "norm_label": "laser switching setup (lss)"
+      "community": 3,
+      "norm_label": "laser switching setup (lss)",
+      "id": "concept_laser_switching_setup"
     },
     {
       "label": "Electron Backscatter Diffraction (EBSD)",
@@ -2684,9 +2512,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_ebsd",
-      "community": 0,
-      "norm_label": "electron backscatter diffraction (ebsd)"
+      "community": 2,
+      "norm_label": "electron backscatter diffraction (ebsd)",
+      "id": "concept_ebsd"
     },
     {
       "label": "Stochastic Nucleation in Crystallization",
@@ -2697,9 +2525,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_stochastic_nucleation",
-      "community": 2,
-      "norm_label": "stochastic nucleation in crystallization"
+      "community": 3,
+      "norm_label": "stochastic nucleation in crystallization",
+      "id": "concept_stochastic_nucleation"
     },
     {
       "label": "Neuromorphic Photonics",
@@ -2710,9 +2538,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_neuromorphic_photonics",
-      "community": 2,
-      "norm_label": "neuromorphic photonics"
+      "community": 3,
+      "norm_label": "neuromorphic photonics",
+      "id": "concept_neuromorphic_photonics"
     },
     {
       "label": "Simpson et al. GeTe/SbTe Interfacial Phase-Change Superlattice",
@@ -2723,9 +2551,9 @@
       "captured_at": null,
       "author": "Simpson et al.",
       "contributor": null,
-      "id": "files_ma_athanasia_piperidou_final_simpson_superlattice",
-      "community": 0,
-      "norm_label": "simpson et al. gete/sbte interfacial phase-change superlattice"
+      "community": 2,
+      "norm_label": "simpson et al. gete/sbte interfacial phase-change superlattice",
+      "id": "files_ma_athanasia_piperidou_final_simpson_superlattice"
     },
     {
       "label": "Rationale: Thinner SbTe Layers Increase Covalency and Improve Switching",
@@ -2736,9 +2564,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_bond_confinement_rationale",
-      "community": 0,
-      "norm_label": "rationale: thinner sbte layers increase covalency and improve switching"
+      "community": 2,
+      "norm_label": "rationale: thinner sbte layers increase covalency and improve switching",
+      "id": "concept_bond_confinement_rationale"
     },
     {
       "label": "Scanning Probe Techniques (Book Excerpt)",
@@ -2749,9 +2577,425 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "files_scanning_probe_techniques_buchseiten_book",
-      "community": 8,
-      "norm_label": "scanning probe techniques (book excerpt)"
+      "community": 9,
+      "norm_label": "scanning probe techniques (book excerpt)",
+      "id": "files_scanning_probe_techniques_buchseiten_book"
+    },
+    {
+      "label": "Electron Microscope Explainer (Transcript)",
+      "file_type": "document",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": "Branch Education",
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_transcript",
+      "community": 0,
+      "norm_label": "electron microscope explainer (transcript)"
+    },
+    {
+      "label": "Electron Microscope",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_electron_microscope",
+      "community": 0,
+      "norm_label": "electron microscope"
+    },
+    {
+      "label": "Scanning Transmission Electron Microscope (STEM)",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
+      "community": 0,
+      "norm_label": "scanning transmission electron microscope (stem)"
+    },
+    {
+      "label": "Light Microscope",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_light_microscope",
+      "community": 0,
+      "norm_label": "light microscope"
+    },
+    {
+      "label": "Field Emission Source",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_field_emission_source",
+      "community": 0,
+      "norm_label": "field emission source"
+    },
+    {
+      "label": "Tungsten Crystal Needle",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
+      "community": 0,
+      "norm_label": "tungsten crystal needle"
+    },
+    {
+      "label": "Extractor Ring",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_extractor_ring",
+      "community": 0,
+      "norm_label": "extractor ring"
+    },
+    {
+      "label": "Electron Acceleration (70% Speed of Light)",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_electron_acceleration",
+      "community": 0,
+      "norm_label": "electron acceleration (70% speed of light)"
+    },
+    {
+      "label": "Electron Beam",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_electron_beam",
+      "community": 0,
+      "norm_label": "electron beam"
+    },
+    {
+      "label": "Magnetic Lens",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_magnetic_lens",
+      "community": 0,
+      "norm_label": "magnetic lens"
+    },
+    {
+      "label": "Condenser Lens",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_condenser_lens",
+      "community": 0,
+      "norm_label": "condenser lens"
+    },
+    {
+      "label": "Objective Lens",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_objective_lens",
+      "community": 0,
+      "norm_label": "objective lens"
+    },
+    {
+      "label": "Projector Lens",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_projector_lens",
+      "community": 0,
+      "norm_label": "projector lens"
+    },
+    {
+      "label": "Aperture",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_aperture",
+      "community": 0,
+      "norm_label": "aperture"
+    },
+    {
+      "label": "Specimen",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_specimen",
+      "community": 0,
+      "norm_label": "specimen"
+    },
+    {
+      "label": "Specimen Holder",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_specimen_holder",
+      "community": 0,
+      "norm_label": "specimen holder"
+    },
+    {
+      "label": "Electron Scattering",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_electron_scattering",
+      "community": 0,
+      "norm_label": "electron scattering"
+    },
+    {
+      "label": "Vacuum System",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_vacuum_system",
+      "community": 0,
+      "norm_label": "vacuum system"
+    },
+    {
+      "label": "Optical Aberration",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_optical_aberration",
+      "community": 0,
+      "norm_label": "optical aberration"
+    },
+    {
+      "label": "Lorentz Law",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_lorentz_law",
+      "community": 0,
+      "norm_label": "lorentz law"
+    },
+    {
+      "label": "Electron Wavelength (Wave-Particle Duality)",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_electron_wavelength",
+      "community": 0,
+      "norm_label": "electron wavelength (wave-particle duality)"
+    },
+    {
+      "label": "Diffraction Limit of Light",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_diffraction_limit",
+      "community": 0,
+      "norm_label": "diffraction limit of light"
+    },
+    {
+      "label": "Resolution",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_resolution",
+      "community": 0,
+      "norm_label": "resolution"
+    },
+    {
+      "label": "Magnification",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_magnification",
+      "community": 0,
+      "norm_label": "magnification"
+    },
+    {
+      "label": "Phosphorescent Screen",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_phosphorescent_screen",
+      "community": 0,
+      "norm_label": "phosphorescent screen"
+    },
+    {
+      "label": "CMOS Camera",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_cmos_camera",
+      "community": 0,
+      "norm_label": "cmos camera"
+    },
+    {
+      "label": "Secondary Electrons",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_secondary_electrons",
+      "community": 0,
+      "norm_label": "secondary electrons"
+    },
+    {
+      "label": "X-ray Detector",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_xray_detector",
+      "community": 0,
+      "norm_label": "x-ray detector"
+    },
+    {
+      "label": "Deflection Coils",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_deflection_coils",
+      "community": 0,
+      "norm_label": "deflection coils"
+    },
+    {
+      "label": "Interaction Volume",
+      "file_type": "rationale",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_interaction_volume",
+      "community": 0,
+      "norm_label": "interaction volume"
+    },
+    {
+      "label": "Transistor",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_transistor",
+      "community": 0,
+      "norm_label": "transistor"
+    },
+    {
+      "label": "Thermo Fisher Scientific",
+      "file_type": "concept",
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "source_url": "https://www.youtube.com/watch?v=9DnnxvS6BBQ",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "raw_yt_6ad47fda5c0c_thermofisher",
+      "community": 0,
+      "norm_label": "thermo fisher scientific"
     }
   ],
   "links": [
@@ -5149,6 +5393,66 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_transmission_electron_microscopy",
+      "target": "raw_yt_6ad47fda5c0c_cmos_camera"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_transmission_electron_microscopy",
+      "target": "raw_yt_6ad47fda5c0c_electron_microscope"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_transmission_electron_microscopy",
+      "target": "raw_yt_6ad47fda5c0c_magnetic_lens"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_transmission_electron_microscopy",
+      "target": "raw_yt_6ad47fda5c0c_transistor"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
+      "target": "concept_transmission_electron_microscopy"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_thermofisher",
+      "target": "concept_transmission_electron_microscopy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "Raw/Sources/widmann-2026-gst-in2te3-superlattices.md",
       "source_location": null,
       "weight": 1.0,
@@ -5706,6 +6010,46 @@
       "target": "concept_storage_class_memory"
     },
     {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_sem",
+      "target": "raw_yt_6ad47fda5c0c_electron_microscope"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_sem",
+      "target": "raw_yt_6ad47fda5c0c_interaction_volume"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_sem",
+      "target": "raw_yt_6ad47fda5c0c_secondary_electrons"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
+      "target": "concept_sem"
+    },
+    {
       "relation": "cites",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -6074,220 +6418,349 @@
       "weight": 1.0,
       "source": "concept_laser_switching_setup",
       "target": "concept_stochastic_nucleation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_transcript",
+      "target": "raw_yt_6ad47fda5c0c_electron_microscope"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_transcript",
+      "target": "raw_yt_6ad47fda5c0c_thermofisher"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_microscope",
+      "target": "raw_yt_6ad47fda5c0c_light_microscope"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
+      "target": "raw_yt_6ad47fda5c0c_deflection_coils"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
+      "target": "raw_yt_6ad47fda5c0c_xray_detector"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_diffraction_limit",
+      "target": "raw_yt_6ad47fda5c0c_light_microscope"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_field_emission_source",
+      "target": "raw_yt_6ad47fda5c0c_electron_beam"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_field_emission_source",
+      "target": "raw_yt_6ad47fda5c0c_extractor_ring"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_field_emission_source",
+      "target": "raw_yt_6ad47fda5c0c_tungsten_crystal_needle"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_extractor_ring",
+      "target": "raw_yt_6ad47fda5c0c_tungsten_crystal_needle"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_acceleration",
+      "target": "raw_yt_6ad47fda5c0c_electron_beam"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_acceleration",
+      "target": "raw_yt_6ad47fda5c0c_electron_wavelength"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_beam",
+      "target": "raw_yt_6ad47fda5c0c_specimen"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_vacuum_system",
+      "target": "raw_yt_6ad47fda5c0c_electron_beam"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_condenser_lens",
+      "target": "raw_yt_6ad47fda5c0c_magnetic_lens"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_magnetic_lens",
+      "target": "raw_yt_6ad47fda5c0c_lorentz_law"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_objective_lens",
+      "target": "raw_yt_6ad47fda5c0c_magnetic_lens"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_projector_lens",
+      "target": "raw_yt_6ad47fda5c0c_magnetic_lens"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_condenser_lens",
+      "target": "raw_yt_6ad47fda5c0c_aperture"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_objective_lens",
+      "target": "raw_yt_6ad47fda5c0c_magnification"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_objective_lens",
+      "target": "raw_yt_6ad47fda5c0c_optical_aberration"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_projector_lens",
+      "target": "raw_yt_6ad47fda5c0c_magnification"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_specimen",
+      "target": "raw_yt_6ad47fda5c0c_electron_scattering"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_specimen",
+      "target": "raw_yt_6ad47fda5c0c_specimen_holder"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_scattering",
+      "target": "raw_yt_6ad47fda5c0c_resolution"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_optical_aberration",
+      "target": "raw_yt_6ad47fda5c0c_resolution"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_diffraction_limit",
+      "target": "raw_yt_6ad47fda5c0c_electron_wavelength"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_electron_wavelength",
+      "target": "raw_yt_6ad47fda5c0c_resolution"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_interaction_volume",
+      "target": "raw_yt_6ad47fda5c0c_resolution"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_6ad47fda5c0c_phosphorescent_screen",
+      "target": "raw_yt_6ad47fda5c0c_cmos_camera"
     }
   ],
   "hyperedges": [
     {
-      "id": "gst_pseudobinary_tieline",
-      "label": "GeTe-Sb2Te3 Pseudo-Binary Tie-Line PCMs",
+      "id": "tem_lens_system",
+      "label": "TEM Three-Lens Magnification System",
       "nodes": [
-        "concept_ge2sb2te5",
-        "concept_gete",
-        "concept_sb2te3"
+        "raw_yt_6ad47fda5c0c_condenser_lens",
+        "raw_yt_6ad47fda5c0c_objective_lens",
+        "raw_yt_6ad47fda5c0c_projector_lens"
       ],
-      "relation": "form",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Sources/1-d-chalcogenide-nanomaterials-for-electronics-phase--change-memory-and-topologi.md"
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt"
     },
     {
-      "id": "pcm_electronic_switching_mechanism",
-      "label": "Electronic PCM Switching Mechanism",
+      "id": "electron_beam_generation",
+      "label": "Electron Beam Generation and Acceleration",
       "nodes": [
-        "concept_melt_quench",
-        "concept_threshold_switching",
-        "concept_joule_heating",
-        "concept_resistance_drift"
+        "raw_yt_6ad47fda5c0c_field_emission_source",
+        "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
+        "raw_yt_6ad47fda5c0c_extractor_ring",
+        "raw_yt_6ad47fda5c0c_electron_acceleration"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "raw/yt_6ad47fda5c0c.txt"
+    },
+    {
+      "id": "imaging_detection",
+      "label": "Image Detection System",
+      "nodes": [
+        "raw_yt_6ad47fda5c0c_phosphorescent_screen",
+        "raw_yt_6ad47fda5c0c_cmos_camera",
+        "raw_yt_6ad47fda5c0c_electron_beam"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
-      "source_file": "Raw/Sources/bruns-2012-electronic-switching-pcm.md"
-    },
-    {
-      "id": "pcm_thermal_energy_storage_apps",
-      "label": "PCM Thermal Energy Storage Applications",
-      "nodes": [
-        "concept_latent_heat",
-        "concept_thermal_energy_storage",
-        "sources_are_phase_change_materials_the_future_of_water_heaters_sunamp_thermino",
-        "sources_cooling_ai_how_phase_change_materials_make_a_difference_la_flex",
-        "sources_advances_in_phase_change_materials_for_thermal_energy_storage_and_management_cha_spcm"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Sources/Cooling AI How Phase Change Materials Make a Difference.md"
-    },
-    {
-      "id": "gst_sb2te3_superlattice_pcm",
-      "label": "GST/Sb2Te3 Superlattice Phase-Change Memory Engineering",
-      "nodes": [
-        "concept_gst124",
-        "concept_sb2te3",
-        "concept_superlattice",
-        "concept_interfacial_phase_change_memory"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Sources/piperidou-2025-gst-sb2te3-superlattices.md"
-    },
-    {
-      "id": "solution_processed_telluride_films",
-      "label": "Solution-Processed Chalcogenide PCM Film Fabrication",
-      "nodes": [
-        "concept_molecular_telluride_inks",
-        "concept_amine_thiol_cosolvent",
-        "concept_chemical_solution_deposition",
-        "concept_solution_processing"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Sources/phase-change-memory-from-molecular-tellurides.md"
-    },
-    {
-      "id": "spm_nanoscale_pcm_characterization",
-      "label": "Scanning-Probe Nanoscale Characterization of PCM Phase Change",
-      "nodes": [
-        "concept_scanning_tunneling_microscopy",
-        "concept_atomic_force_microscopy",
-        "concept_amorphous_crystalline_transition",
-        "concept_scanning_probe_microscopy"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Sources/scanning-probe-microscopy-textbook.md"
-    },
-    {
-      "id": "in2te3_gst_superlattice_system",
-      "label": "In2Te3/GST-124 superlattice optical switching system",
-      "nodes": [
-        "concept_superlattice",
-        "concept_in2te3",
-        "concept_ge1sb2te4",
-        "concept_van_der_waals_interface",
-        "files_bachelorarbeit_laser_switching_setup"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Files/Bachelorarbeit_FINAL_RW_final_260513_130841.pdf"
-    },
-    {
-      "id": "amorphous_crystalline_switching_cycle",
-      "label": "Amorphous-crystalline reversible switching cycle",
-      "nodes": [
-        "concept_amorphous_phase",
-        "concept_crystalline_phase",
-        "concept_amorphization",
-        "concept_crystallization",
-        "concept_melt_quenching"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Files/nmat2009.pdf"
-    },
-    {
-      "id": "gst_laser_recorded_mark_categories",
-      "label": "GST laser-recorded mark characterization (etching + microscopy)",
-      "nodes": [
-        "concept_ge2sb2te5",
-        "concept_selective_chemical_etching",
-        "concept_afm",
-        "concept_optical_contrast"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Files/oe-18-17-18383.pdf"
-    },
-    {
-      "id": "ostwald_polymorph_crystallization_pathway",
-      "label": "Ostwald-Rule Polymorph-Mediated Crystallization Pathway in GST",
-      "nodes": [
-        "concept_ostwald_rule",
-        "concept_rocksalt_phase",
-        "concept_gst",
-        "concept_amorphous_crystalline_transition"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Files/firstprinciplesPCMthermo.pdf"
-    },
-    {
-      "id": "endurance_failure_drivers",
-      "label": "PCM Endurance Failure Drivers",
-      "nodes": [
-        "concept_endurance_cycling",
-        "concept_oxidation",
-        "concept_doping",
-        "concept_void_formation"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Files/ome-12-6-2145.pdf"
-    },
-    {
-      "id": "dft_screening_workflow",
-      "label": "First-Principles Thermodynamic Screening Workflow",
-      "nodes": [
-        "concept_dft",
-        "concept_materials_project",
-        "concept_tie_line",
-        "concept_polymorph_screening"
-      ],
-      "relation": "implement",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Files/firstprinciplesPCMthermo.pdf"
-    },
-    {
-      "id": "ist_active_nanophotonics_platform",
-      "label": "IST as Active Nanophotonics Platform (laser-written reconfigurable metasurfaces)",
-      "nodes": [
-        "concept_in3sbte2",
-        "concept_direct_laser_writing",
-        "concept_metasurface",
-        "concept_negative_permittivity"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Files/The plasmonic PCM In3SbTe2 for nanophotonics.pdf"
-    },
-    {
-      "id": "superlattice_bond_confinement_switching",
-      "label": "Bond Confinement Governs Superlattice Switching Performance",
-      "nodes": [
-        "concept_superlattice",
-        "concept_sb2te3",
-        "concept_pme",
-        "concept_bond_confinement"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "Raw/Files/MA_Athanasia_Piperidou_final.pdf"
-    },
-    {
-      "id": "pcm_characterization_techniques",
-      "label": "PCM Superlattice Characterization Toolset",
-      "nodes": [
-        "concept_atom_probe_tomography",
-        "concept_atomic_force_microscopy",
-        "concept_ebsd",
-        "concept_laser_switching_setup"
-      ],
-      "relation": "participate_in",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "Raw/Files/MA_Athanasia_Piperidou_final.pdf"
+      "source_file": "raw/yt_6ad47fda5c0c.txt"
     }
-  ]
+  ],
+  "built_at_commit": "49cb5ed8846f4f0b3c6d5721064120561ae3386b"
 }
