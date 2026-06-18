@@ -1,0 +1,23 @@
+Surprising Connections
+
+  - Metavalent Bonding ⟶ Rocksalt-like structure with vacancies (superlattice thesis ↔ Kolobov nmat2009 — same
+  structural physics named differently)
+  - In3SbTe2 (IST) ⟶ Ge-Sb-Te (GST) Alloys (the plasmonic outlier IST is functionally kin to mainstream GST)
+  - s-SNOM ⟶ Scanning Probe Microscopy (nanophotonics characterization meets the SPM textbook)
+  - Amorphous-to-Crystalline Transition ⟶ Crystallization (thermal CrGT study ↔ optical-storage switching — one
+  mechanism, two communities)
+
+  Suggested Questions (cross-community bridges)
+
+  - Why does Phase-Change Material (PCM) bridge 6 communities at once? (betweenness 0.406 — the central concept tying
+  storage, memory, photonics, and energy together)
+  - Why does Ge2Sb2Te5 (GST-225) connect 8 communities from solution-processed films to nanophotonics?
+  - Why is In3SbTe2 (IST) a bridge from plasmonics back into crystallization and data-storage?
+
+  ---
+
+ The most interesting question this graph can answer: Why does Ge2Sb2Te5 (GST-225) connect eight different communities — from solution-processed film fabrication all the way to plasmonic nanophotonics and neuromorphic computing? Want me to trace it?
+
+  That single material is the spine of your whole corpus, and tracing it would show how one alloy chains together
+  fabrication, device physics, optics, and energy storage. Just say the word and I'll run the query and walk you
+  through the path.
