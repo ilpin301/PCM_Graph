@@ -11,8 +11,15 @@
       "input_tokens": 9000,
       "output_tokens": 3500,
       "files": 1
+    },
+    {
+      "date": "2026-06-19T12:58:52.434712+00:00",
+      "input_tokens": 39000,
+      "output_tokens": 4236,
+      "files": 1,
+      "note": "add YouTube video TfhL5kBiQVI (memory/storage hierarchy)"
     }
   ],
-  "total_input_tokens": 323272,
-  "total_output_tokens": 58956
+  "total_input_tokens": 362272,
+  "total_output_tokens": 63192
 }

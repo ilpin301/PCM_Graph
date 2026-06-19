@@ -1,0 +1,135 @@
+Inside your desktop computer, a more than a dozen different memory and storage locations where data can be found. Specifically, all your video games, applications, and files are stored in the SSD and hard drive. However, when you load an application or video game, gigabytes of data are transferred to the sticks of DRAM, the VRAM in the graphics card, and many other memory locations throughout the CPU and GPU.
+In contrast, if your computer only used a few of these memory locations, then the game would either take days to load and run at a snail's pace or be limited to the simplest of graphics. The science and engineering behind how data and files are stored is incredibly complicated, so we've divided this video into three parts. First, we'll build a visual to demonstrate the fundamental reason why computers need so many different
+data storage locations. Second, we'll investigate the nanoscopic structures, physical designs, and limitations of each device and location, and see how they work. And then third, we'll look into the cutting-edge memory and data storage systems used inside AI servers and data centers. Essentially, we'll explore every aspect of cache, memory, and storage inside desktop computers and AI servers, and show you how it all works.
+So, let's jump right in.
+This video is sponsored by Micron, a leading producer of advanced memory and storage solutions, including DRAM and 3D Nan Flash SSD technologies, which will be featuring.
+That said, all the facts and details presented have been independently researched, written, and animated.
+Over a dozen different memory and storage locations seem like a lot, so why does your computer need them all?
+Well, the main idea is that each type of memory has vastly different storage capacity, access time, bandwidth, and cost. For example, hard drives and SSDs have a ton of storage capacity and are cheap, but have horrible access times and bandwidth.
+In contrast, CPU cache memory has lightning fast access times and high bandwidth, but is expensive and doesn't store much data.
+Essentially, no single memory location has five stars in all these attributes. However, by connecting them all together and using memory controllers and sophisticated algorithms to move data between locations, your computer can run with a combined five stars across the board.
+Here are the specs for each of these memory locations. However, these numbers are rather boring and easily forgotten, so instead, let's use a visualization to illustrate the massive differences between them.
+We'll start with the first two attributes, which are storage capacity and access time.
+For storage, we'll represent one megabyte of data as a 400-page book, and interestingly, with each letter, punctuation mark, and space equal to an 8-bit ASCII character, 400 pages of text is very close to one megabyte, so it's a fitting comparison.
+Next is access time, which is the time between sending a request for data or a specific book, and that book traveling back to the requester.
+We'll depict access time by the distance between data storage locations with 20 centimeters equal to 1 nanosecond.
+With these two attributes in mind, let's begin with the CPU, which will represent as a table in a library.
+Within the CPU, data is stored as open spaces for books and individual pages inside three levels of cache memory and registers.
+The CPU is divided into eight performance cores and 16 efficient cores, with the registers L1 and L2 cache divided between each of the cores, whereas the L3 cache is shared among all of the cores.
+All these memory locations take up approximately 30% of the area of the actual CPU die, and in total, 68 megabytes or books can be stored, as well as sundry pages for the registers and L1 caches.
+The remaining 70% of the CPU is taken up by each core's functional logic, device and memory controllers, and many other sections.
+To clearly depict access time, we'll rearrange the CPU with the ALU calculators and execution units on one side, and the registers and caches spread across the table.
+As you can see, the registers are a third of a nanosecond away from the ALU calculators.
+In contrast, the shared 36 megabytes or books in the L3 caches are on the other side of the table at 7.5 nanoseconds away.
+Let's move on to the DRAM, which will represent a short library cards next to the table.
+With two sticks of 16 gigabyte DRAM, all these cards can hold the equivalent of 32,000 books, which is 470 times the capacity of the CPU.
+The tradeoff is that moving data from the CPU to the DRAM takes around 45 nanoseconds, so most of the DRAM cards are positioned 9 meters away from the CPU table.
+Next up is the graphics card, which contains the GPU and DRAM chips.
+The GPU table can hold approximately 37 megabytes across its registers, L1 and L2 caches, which together take up a third of the die, with the rest being functional logic.
+However, because the GPU has 10,000-ish individual cores, the distribution of memory is a little different from that on the CPU.
+Next to the GPU table are the VRAM chip library cards, which hold 24 gigabytes and are 250 nanoseconds away from the GPU.
+This additional distance is due to the VRAM's design, which prioritizes higher bandwidth using wider buses and deep pipelines rather than single request access time.
+Additionally, it takes an average of 300 nanoseconds to request and send data from the CPU to the GPU, thereby placing the two devices 60 meters apart.
+With the CPU, GPU, and both types of main memory covered, let's move on to the storage devices, which are the two solid-state drives or SSDs and the hard drive.
+The first NVMe solid-state drive holds two million books on an array of 2,000 bookshelves, with each bookshelf holding a gigabyte of data.
+The next SATA SSD holds four million books across 4,000 bookshelves, and the hard disk drive holds a whopping 8 million books.
+Although these locations store thousands of times more data, when we consider their access time, the NVMe and SATA SSDs are positioned at 80 and 120 microseconds away, which is analogous to 16 and 24 kilometers respectively, and then way further out is the hard drive, with a 10 millisecond access time or 2,000 kilometers away.
+As you can see with this visualization, there's a staggeringly large trade-off in the magnitudes of differences in storage capacity and access time among all these locations.
+One important thing to note is that in a university level computer architecture course, discussions on memory and storage would typically be organized into a pyramid called the memory hierarchy, with registers and cash at the top, DRAM in the middle, and SSDs and hard drives below that.
+Along with arrows to depict the trends in the various attributes. Additionally, there's another layer at the bottom for the internet and other devices.
+So let's incorporate the internet and cloud storage into our visualization. To start, the internet holds absurdly large amounts of data at approximately 500 exabytes.
+Latency varies, depending on the distance the request and return data need to travel. Therefore, getting data from a nearby city takes approximately 12 milliseconds.
+In contrast, sending and receiving data to the other side of the earth takes on average a quarter of a second, which interestingly is about twice as long as if light were to travel the same distance.
+That is, of course, as long as you're not using a dial-up toaster as a modem.
+Let's next explore and correlate the physical structure inside these memory and storage locations with each of their attributes. We'll start with a two-terabyte NVMe solid state drive.
+Mounted to the SSD circuit board are a memory controller, DRAM, and a pair of 3D-NAND flash chip packages where all the files are stored. So let's open it up.
+Inside, we find a stack of 8 dies with wires connecting each one to a substrate at the bottom. A single die contains multiple planes.
+And when we zoom in on one of the planes, we see a massive array of memory cells, 40,000 strings wide, 60,000 rows deep, and stacked around 200 layers tall.
+In total, this array of memory cells can store more than 100 gigabytes of data in a volume smaller than a grain of rice, while costing only $0.7 per gigabyte. But how does it physically store data?
+Well, let's zoom in to see a single memory cell called charge trap flash or CTF, which stores data by trapping 8 distinct amounts of charge or electrons corresponding to 3 bits of data.
+The electrons are held in a charge trap surrounded by an insulating dielectric, enabling data to be stored for years without external power.
+The tradeoff is that, due to the lack of a direct electrical connection, writing or moving electrons into the charge trap and reading or measuring the stored charge requires applying a complex sequence of voltage steps that take dozens of microseconds to complete.
+Resulting in a read time of around 80 microseconds, a right time closer to 500 microseconds, and 5 gigabytes per second of bandwidth.
+It's important to note that even if a CPU core were placed directly next to the array of CTF memory cells, the access time would still be close to 80 microseconds.
+Therefore, it's important to clarify that in our visualization, the distance between objects isn't the time it takes electricity to travel, but rather access time is determined by the limitations of the storage medium itself.
+In a way, you can think of it like the time and effort required in reaching books on a very tall bookshelf.
+Another note is that SATA SSDs use a similar set of chips, including the same 3D-NAND flash, resulting in comparable costs.
+However, they have longer access times and substantially lower bandwidth due to limitations in the older SATA data transfer protocol, so take that into consideration when you build or buy your next computer.
+Let's move on and explore the hard disk drive.
+Inside it, we find a stack of four platters with eight read right heads controlled by a voice coil motor.
+Data is stored across the platter in half a million concentric circles called tracks.
+Zooming in, we see individual sectors, each with a preamble or synchronization zone, and address four kilobytes of data, an error correcting code, and gaps between sectors.
+When we zoom into a nanoscopic view, we see that data is written using focus to magnetic fields to manipulate the magnetic domains inside a nanometer-sized volume within the platter.
+At the same time, the read head senses a change in magnetic fields between domains as one and no change as zero.
+As a result, trillions of bits can fit across the platters area, yielding terabytes of storage in a single hard drive.
+Hard drives cost only a center two per gigabyte because the platters are simply layers of material on a disk, rather than complex semiconductor structures.
+However, there are considerable costs in the read right heads, which must be engineered to fly only nanometers above the spinning surface.
+The main trade-off of hard drives is that they have long access times and low bandwidth, because the read right head must physically move too,
+or seek the correct location on the platter while it spins around at 7200 RPM.
+While this may seem incredibly fast, it equates to one rotation every 8.3 milliseconds, yielding an access time in that range.
+With storage covered, let's discuss main memory in these sticks of DRAM.
+Each one contains 8 chips that directly connect to the CPU via the motherboard's memory channels, and are all managed by the CPU's memory controller.
+Upon opening one of these DRAM chips, we find a set of interconnection layers and an integrated circuit containing 32 banks, with each one consisting of an array of approximately 65,000 by 8,000 memory cells.
+When we zoom in, we can see individual memory cells built from one transistor and one capacitor, hence the name 1t1c.
+One bit is stored as charge in each capacitor, and the transistor is used to access that data.
+To read or write data, the CPU sends an address for a specific bank and row, thereby turning on all the transistors in that row and directly connecting each capacitor to a sense amplifier.
+The sense amplifiers measure the voltage in each capacitor, and then a set of 8 sense amplifiers is connected to either the read or write drivers, which relay data to and from the CPU, in total taking around 45 nanoseconds.
+Additionally, DRAM has a much higher bandwidth, typically around 48GB per second, which allows the operating system to quickly context switch between processes.
+The tradeoff is that, due to the physical size of the capacitor, the 1t1c arrays typically confined to a 2d plane, resulting in a lower bit density and higher cost per bit.
+Additionally, each capacitor quickly loses its charge, therefore every memory cell must be frequently refreshed, and without power, DRAM would lose all its data in a tenth of a second.
+Finally, let's move on to the structure of cache memory and registers inside the CPU. They're both made of transistors, resulting in incredibly fast access times and high bandwidth.
+Cache memory uses 6 transistors per bit, assembled into an SRAM cell. While 6 transistors may seem small, when we multiply this by 36 MB in the L3 cache, we get 1.8 billion transistors.
+Adding in the other two levels of caches, along with the space for each address, results in approximately a third of the CPU's 26 billion transistors being dedicated to cache.
+Factoring in the cost of the CPU and extrapolating the cache to a gigabyte of storage yields absurdly high prices in transistor counts, which is why the capacity of cache is so small.
+As for registers, they store bits in D flip flops, using around 16 transistors per bit. Each register is typically 64 bits wide, and each processing core contains 32 registers or entries in a register file.
+There are two reasons why register files are rather small. First, registers are designed to be accessed in a single clock cycle, or a third of an nanosecond, and increasing the number of entries would require larger decoder circuitry, and more ports needed to access all the registers.
+This additional circuitry would require a slower clock speed, thereby slowing down your computer. Second, 32 registers are addressed using 5 bits within the instructions themselves, and therefore, increasing the number of registers would require longer instructions.
+In essence, registers sit directly next to the execution units and the arithmetic logic unit, where the core's calculations and logic operations occur, and then spread across the table of the different cache levels and sizes.
+This visualization is useful because execution units can only work on data that's already in the registers, so if the data is not there, it must be fetched from the cache hierarchy, main memory, or even storage and gradually moved into the registers.
+Having covered the physical design of registers, caches, DRAM, hard disk drives, and solid state drives, it's important to note that the sizes and access times we used are approximate, because manufacturers rarely publish all of their internal specs.
+For example, our SSD model, with roughly 40 x 60,000 x 200 CTF cells per plane, and two planes per die, is intended to be in the realistic ballpark rather than an exact blueprint.
+In practice, there are hundreds of different designs and architectures for each type of storage, and technology is continually improving.
+So in a decade, these devices will likely be many times larger and offer much faster access times in higher bandwidth, furthermore.
+There are also other memory technologies such as magnetic RAM and phase change memory, plus many emerging variants for each level of the hierarchy, but covering those would take an entire separate hour long video. So for now, let's move on.
+The final topic we'll explore is the cutting edge memory and storage systems used inside AI servers and data centers.
+AI runs on incredibly advanced AI accelerators and AI processors that execute pedophlops of calculations and require two orders of magnitude more memory and storage than a typical desktop computer.
+Specifically, inside a single AI server, there can be terabytes of memory and hundreds of terabytes of storage. However, this raises the question.
+If a paragraph's text, when converted to binary using ASCII, occupies only a few hundred bytes, why does AI need such large amounts of memory and storage?
+Well, essentially, AI needs to build an understanding of the input text, and it does this by using roughly between two and 8000 dimensions or values per word, each one byte in size.
+Technically, an AI uses tokens, which can sometimes be a part of a word, but for simplicity, we'll say one word equals one token, and that each token uses 8000 dimensions.
+We're planning many more videos that will dive deeper into AI, but for now, we'll provide a high-level explanation.
+So then, what are these 8000 dimensions or values? Well, a simplified way of thinking about it is that the word dog, for example, is learned and understood by the AI by assigning different values for a subset of the 8000 dimensions relating to certain attributes
+in order to embed or establish an understanding of that word. For example, some dimensions are used to represent attributes of the word, such as temperature and how hot or cold the word is, or size and how big or small the word or token is.
+As a result, each token has 8000 dimensions or values, each one byte in size, resulting in 8 kilobytes of data.
+However, the AI needs to work with paragraphs of text, which yields much more data. Specifically, the maximum number of tokens in AI can handle is called a context window, and for cutting-edge models is around 100,000 to a couple of million tokens.
+The context window includes not only the input text, but also prior conversations, the answer or output text, other reference text and much more. Therefore, a context window of a million tokens, each with 8000 dimensions, results in 8 kilobytes of data.
+To generate a response, the AI must feed the million token context window through hundreds of transformer blocks. These blocks include attention sublayers, feed forward or multi-layer perceptron blocks, variations of mixture of experts blocks and many other components.
+Each block is made from tens of millions of learned parameters, and therefore, state-of-the-art AI models are built from hundreds of billions of parameters.
+While the context window passes through each of these blocks and billions of parameters of the AI model, all these numbers must be stored in memory and continuously fed to and from the AI processors.
+Resulting in tremendous amounts of data movement and the need for AI to have enormous amounts of memory. As a result, AI also uses a memory hierarchy, but dialed up to 11, and that's where this video's sponsor, Micron, operates.
+Micron has pioneered a new memory hierarchy for AI processors that divides memory into near memory, called high bandwidth memory or HBM.
+This tier uses HBM3E and HBM4, located next to the AI chip itself.
+The AI memory hierarchy also includes DDR5 server R-dimsticks as main memory, and even more expansion memory using CXL or compute-expressing protocol to further increase server memory capacity.
+This is all before we even touch the storage layers.
+So, let's explore each of these layers.
+Closes to each AI processor is the HBM3E, built from a 12-high stack of DRAM dies that use through silicon vies or TSVs to connect all the layers, thereby building a compact memory dense cube into a single package.
+Six of these packages are mounted to an interposer, which is a thin silicon substrate that sits under the HBM stacks in AI processor.
+This interposer acts like a mini-motherboard or bridge, providing ultra-dense wiring between the AI processor in the center and the surrounding 141 gigabytes of HBM.
+Short, yet incredibly wide routes between the AI processor and HBM deliver an impressive 1.2 terabytes per second of bandwidth with very low latency.
+The next layer down in the AI memory hierarchy is the DDR5 R-dim, and 32 sticks each containing 128 gigabytes resulting in four terabytes of memory.
+Notably, some AI systems use LPDDR, similar to the memory in your phone, thereby enabling higher bandwidth while delivering low power and efficient performance.
+In addition to memory, Micron has pioneered an even more impressive hierarchy for storage and pushed the science and engineering inside SSDs and flash storage in order to fit more data into a single package.
+Specifically, within the AI chassis or Micron's 9650 Series SSDs, each with 8 to 30 terabytes of storage, which take advantage of the cutting-edge PCIe Gen6 protocol and are engineered to support the extreme throughput demands of training and inference pipelines.
+Furthermore, in a separate rack our networked data lakes using Micron's 6600 ion NVMe SSDs with each module shown containing up to 122 terabytes of storage, with other form factors reaching as much as 246 terabytes.
+As a result, a full rack can store dozens to hundreds of petabytes of data, depending on the chassis and SSD density, making it perfect for storing training data sets with billions of examples.
+AI is the most data-intensive workload in modern computing, which is why data center architecture must tightly integrate multiple layers of memory and storage.
+As systems grow more complex and sophisticated, their memory and storage solutions need to become increasingly diverse and specialized.
+If you're curious about Micron's AI memory hierarchy, high band with memory or any of Micron's products, take a look at one of these links in the description.
+Alternatively, if pioneering the next generation of memory and storage chips interests you, Micron is always looking for talented scientists and engineers to help innovate on cutting-edge chips.
+You can find out more about working for Micron using this link.
+This video is only a glimpse of all the science, engineering, and technical details involved in modern memory hierarchies, and there's a ton of research, development, and plenty of careers focused entirely on the exciting world of data.
+We're thankful to all our Patreon and YouTube memberships sponsors for supporting our videos.
+If you want to financially support our work, you can find the links in the description below.
+This is Branch Education, and we create 3D animations that dive deeply into the technology that drives our modern world.
+Watch another Branch video by clicking one of these cards or click here to subscribe.
+Thanks for watching to the end.
