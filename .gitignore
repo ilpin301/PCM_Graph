@@ -1,0 +1,15 @@
+# graphify: machine-local cache & paths.
+# These are regenerated on every run and embed each machine's absolute paths
+# (e.g. C:\___LLM_wiki\... vs F:\____IL_AI\...), so tracking them guarantees
+# merge conflicts between collaborators. The shared graph itself
+# (graph.json / graph.html / GRAPH_REPORT.md / .graphify_labels.json) is
+# machine-independent and stays tracked.
+graphify-out/manifest.json
+graphify-out/.graphify_root
+graphify-out/.graphify_python
+graphify-out/cost.json
+graphify-out/cache/
+
+# Stray secondary output dir produced when a collaborator's project root
+# differs (root = ...\PCM_Graph\Raw -> output lands in Raw/graphify-out/).
+Raw/graphify-out/
