@@ -4,44 +4,48 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "tem_lens_system",
-        "label": "TEM Three-Lens Magnification System",
+        "id": "desktop_memory_hierarchy_tiers",
+        "label": "Desktop Memory Hierarchy Tiers",
         "nodes": [
-          "raw_yt_6ad47fda5c0c_condenser_lens",
-          "raw_yt_6ad47fda5c0c_objective_lens",
-          "raw_yt_6ad47fda5c0c_projector_lens"
+          "raw_yt_1a8aeb6ce67e_registers",
+          "raw_yt_1a8aeb6ce67e_cache_memory",
+          "raw_yt_1a8aeb6ce67e_dram",
+          "raw_yt_1a8aeb6ce67e_ssd",
+          "raw_yt_1a8aeb6ce67e_hdd",
+          "raw_yt_1a8aeb6ce67e_internet_cloud"
         ],
-        "relation": "participate_in",
+        "relation": "form",
         "confidence": "EXTRACTED",
         "confidence_score": 1.0,
-        "source_file": "raw/yt_6ad47fda5c0c.txt"
+        "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
       },
       {
-        "id": "electron_beam_generation",
-        "label": "Electron Beam Generation and Acceleration",
+        "id": "volatile_memory_tiers",
+        "label": "Volatile Memory Tiers",
         "nodes": [
-          "raw_yt_6ad47fda5c0c_field_emission_source",
-          "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
-          "raw_yt_6ad47fda5c0c_extractor_ring",
-          "raw_yt_6ad47fda5c0c_electron_acceleration"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "raw/yt_6ad47fda5c0c.txt"
-      },
-      {
-        "id": "imaging_detection",
-        "label": "Image Detection System",
-        "nodes": [
-          "raw_yt_6ad47fda5c0c_phosphorescent_screen",
-          "raw_yt_6ad47fda5c0c_cmos_camera",
-          "raw_yt_6ad47fda5c0c_electron_beam"
+          "raw_yt_1a8aeb6ce67e_registers",
+          "raw_yt_1a8aeb6ce67e_sram",
+          "raw_yt_1a8aeb6ce67e_dram",
+          "raw_yt_1a8aeb6ce67e_vram"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
-        "confidence_score": 0.75,
-        "source_file": "raw/yt_6ad47fda5c0c.txt"
+        "confidence_score": 0.85,
+        "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
+      },
+      {
+        "id": "ai_server_memory_storage_stack",
+        "label": "AI Server Memory and Storage Stack",
+        "nodes": [
+          "raw_yt_1a8aeb6ce67e_hbm",
+          "raw_yt_1a8aeb6ce67e_ddr5_rdimm",
+          "raw_yt_1a8aeb6ce67e_cxl",
+          "raw_yt_1a8aeb6ce67e_nvme_ssd"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
       }
     ]
   },
@@ -55,7 +59,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "phase-change material (pcm)",
       "id": "concept_phase_change_material"
     },
@@ -68,7 +72,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "phase-change memory (pcm/pcram)",
       "id": "concept_phase_change_memory"
     },
@@ -81,7 +85,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "ge2sb2te5 (gst-225)",
       "id": "concept_ge2sb2te5"
     },
@@ -94,7 +98,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "gete",
       "id": "concept_gete"
     },
@@ -107,7 +111,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "sb2te3",
       "id": "concept_sb2te3"
     },
@@ -120,7 +124,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "chalcogenide materials",
       "id": "concept_chalcogenide"
     },
@@ -133,7 +137,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "threshold switching",
       "id": "concept_threshold_switching"
     },
@@ -146,7 +150,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "melt-quench / crystallization switching mechanism",
       "id": "concept_melt_quench"
     },
@@ -159,7 +163,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "joule heating",
       "id": "concept_joule_heating"
     },
@@ -172,7 +176,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "resistance drift",
       "id": "concept_resistance_drift"
     },
@@ -185,7 +189,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "nucleation- vs growth-dominated crystallization",
       "id": "concept_nucleation_growth_crystallization"
     },
@@ -237,7 +241,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "machine-learned interatomic potentials (gap/ace)",
       "id": "concept_machine_learned_potential"
     },
@@ -250,7 +254,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "neuromorphic / in-memory computing",
       "id": "concept_neuromorphic_computing"
     },
@@ -263,7 +267,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "programmable photonics / metamaterials",
       "id": "concept_programmable_photonics"
     },
@@ -276,7 +280,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "sb2s3 (antimony trisulfide)",
       "id": "concept_sb2s3"
     },
@@ -289,7 +293,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "in3sbte2 (ist)",
       "id": "concept_in3sbte2"
     },
@@ -302,7 +306,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "elemental te selector switch",
       "id": "concept_elemental_te_selector"
     },
@@ -315,7 +319,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "metastable rocksalt crystalline phase",
       "id": "concept_rocksalt_metastable_phase"
     },
@@ -328,7 +332,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "ovshinsky electrical switching (1968)",
       "id": "concept_ovshinsky_1968"
     },
@@ -341,7 +345,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "vapor-liquid-solid (vls) growth",
       "id": "concept_vls_growth"
     },
@@ -354,7 +358,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "in situ tem of pcm",
       "id": "concept_in_situ_tem"
     },
@@ -367,7 +371,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "thermal engineering / confinement for reset current reduction",
       "id": "concept_thermal_confinement"
     },
@@ -380,7 +384,7 @@
       "captured_at": "2026-06-17",
       "author": "Stefan Meister",
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "meister dissertation: 1-d chalcogenide nanomaterials for electronics",
       "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_meister_dissertation"
     },
@@ -393,7 +397,7 @@
       "captured_at": "2026-06-17",
       "author": "Stefan Meister",
       "contributor": null,
-      "community": 5,
+      "community": 4,
       "norm_label": "void opening/closing switching mechanism in pc nanowires",
       "id": "sources_1_d_chalcogenide_nanomaterials_for_electronics_phase__change_memory_and_topologi_void_switching"
     },
@@ -484,7 +488,7 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "elliott: phase-change memory and switching materials (talk)",
       "id": "sources_phase_change_memory_and_switching_materials_elliott_talk"
     },
@@ -497,7 +501,7 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "hyper-bonded seesaw units (3c-4e bonds) in glassy gst",
       "id": "sources_phase_change_memory_and_switching_materials_hyperbonding"
     },
@@ -510,7 +514,7 @@
       "captured_at": "2026-05-25",
       "author": "Stephen Richard Elliott (University of Oxford / University of Cambridge)",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "chiral crystallization of tellurium via cubic intermediate",
       "id": "sources_phase_change_memory_and_switching_materials_chiral_te"
     },
@@ -523,7 +527,7 @@
       "captured_at": "2026-05-25",
       "author": "J Shen, S Jia, N Shi et al.",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "shen et al. 2021, science 374, 1390 (elemental te switch)",
       "id": "sources_phase_change_memory_and_switching_materials_shen_2021_te_switch"
     },
@@ -536,7 +540,7 @@
       "captured_at": "2026-05-25",
       "author": "Y Zhou, SR Elliott, DF Thomas du Toit, W Zhang, VL Deringer",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "zhou et al. 2024, arxiv:2409.03860 (pathway to chirality in te)",
       "id": "sources_phase_change_memory_and_switching_materials_zhou_2024_te_chirality"
     },
@@ -549,7 +553,7 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "simpson: from data storage to programmable photonics (talk)",
       "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_talk"
     },
@@ -562,7 +566,7 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "metals compatibility with gst (tin best electrode)",
       "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_metals_compat"
     },
@@ -575,7 +579,7 @@
       "captured_at": "2026-05-25",
       "author": "Prof. Robert Simpson (University of Birmingham, formerly SUTD Singapore)",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "sb2s3/ag hyperbolic metamaterials",
       "id": "sources_prof_robert_simpson_from_data_storage_to_programmable_photonics_hyperbolic_mm"
     },
@@ -588,7 +592,7 @@
       "captured_at": "2026-05-25",
       "author": "Felix Adams, Ichiro Takeuchi, Carlos R\u00edos Ocampo, Yifei Mo",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "adams et al.: first-principles thermodynamic analysis of ternary pcms",
       "id": "sources_adams_2025_firstprinciples_pcm_thermo_paper"
     },
@@ -601,7 +605,7 @@
       "captured_at": "2026-05-25",
       "author": "Felix Adams, Ichiro Takeuchi, Carlos R\u00edos Ocampo, Yifei Mo",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "ostwald's rule as pcm screening framework",
       "id": "sources_adams_2025_firstprinciples_pcm_thermo_ostwald_rule"
     },
@@ -653,7 +657,7 @@
       "captured_at": "2026-06-17",
       "author": "Chiyui Ahn et al.",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "ahn et al.: energy-efficient pcm with graphene thermal barrier",
       "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_paper"
     },
@@ -666,7 +670,7 @@
       "captured_at": "2026-06-17",
       "author": "Chiyui Ahn et al.",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "graphene interfacial thermal barrier in pcm",
       "id": "sources_ahn_pcmgraphenebarrier_nl15pdf_graphene_barrier"
     },
@@ -679,7 +683,7 @@
       "captured_at": "2026-05-25",
       "author": "Gunnar Bruns",
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "bruns: electronic switching in phase-change materials (thesis)",
       "id": "sources_bruns_2012_electronic_switching_pcm_thesis"
     },
@@ -692,7 +696,7 @@
       "captured_at": "2026-05-25",
       "author": "Gunnar Bruns",
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "field-dependent delay time of threshold switching",
       "id": "sources_bruns_2012_electronic_switching_pcm_field_dependent_delay"
     },
@@ -705,7 +709,7 @@
       "captured_at": "2026-05-25",
       "author": "Lukas Conrads, Matthias Wuttig, Dmitry N. Chigrin, Thomas Taubner",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "conrads et al.: plasmonic pcm in3sbte2 for nanophotonics (review)",
       "id": "sources_conrads_2025_ist_review_review"
     },
@@ -744,7 +748,7 @@
       "captured_at": "2026-06-17",
       "author": "Kai Jiang; Shubing Li; Fangfang Chen; Liping Zhu; Wenwu Li",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "jiang et al.: microstructure characterization & device application of pcm",
       "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_review"
     },
@@ -757,7 +761,7 @@
       "captured_at": "2026-06-17",
       "author": "Kai Jiang; Shubing Li; Fangfang Chen; Liping Zhu; Wenwu Li",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "sc-doped sb2te (sst) sub-nanosecond crystallization",
       "id": "sources_microstructure_characterization_phase_transition_and_device_application_of_phase_sst_doping"
     },
@@ -783,7 +787,7 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "multifunctional electrospun pcm mats for solar-thermal energy storage",
       "id": "paper_electrospun_pcm_mats"
     },
@@ -796,7 +800,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "latent heat storage (lhs)",
       "id": "concept_latent_heat_storage"
     },
@@ -809,7 +813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "photothermal conversion",
       "id": "concept_photothermal_conversion"
     },
@@ -822,7 +826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "electrospinning",
       "id": "concept_electrospinning"
     },
@@ -835,7 +839,7 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "ppcm1218 polyester pcm",
       "id": "paper_electrospun_pcm_mats_ppcm1218"
     },
@@ -848,7 +852,7 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "nanoencapsulation of phase change materials for advanced tes",
       "id": "paper_nanoencapsulation_pcm"
     },
@@ -861,7 +865,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "nanoencapsulation",
       "id": "concept_nanoencapsulation"
     },
@@ -874,7 +878,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "sensible heat storage (shs)",
       "id": "concept_sensible_heat_storage"
     },
@@ -887,7 +891,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "thermochemical energy storage (tcs)",
       "id": "concept_thermochemical_energy_storage"
     },
@@ -900,7 +904,7 @@
       "captured_at": "2026-06-17",
       "author": "Florian M. Schenk; Till Zellweger; Dhananjeya Kumaar; Darijan Bo\u0161kovi\u0107; Simon Wintersteller; Pavlo Solokha; Serena De Negri; Alexandros Emboras et al.",
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "phase-change memory from molecular tellurides",
       "id": "paper_pcm_molecular_tellurides"
     },
@@ -913,7 +917,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "solution processing of chalcogenides",
       "id": "concept_solution_processing"
     },
@@ -926,7 +930,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "molecular telluride inks",
       "id": "concept_molecular_telluride_inks"
     },
@@ -939,7 +943,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "ge-sb-te (gst) material system",
       "id": "concept_gst_material_system"
     },
@@ -952,7 +956,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "amine-thiol cosolvent (ethylenediamine/ethanedithiol)",
       "id": "concept_amine_thiol_cosolvent"
     },
@@ -1069,7 +1073,7 @@
       "captured_at": "2026-06-17",
       "author": "Qilong Cheng; Sukumar Rajauria; Erhard Schreck; Robert Smith; Na Wang; Jim Reiner; Qing Dai; David Bogy",
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "protocol for nanoscale thermal mapping using afm with pcm",
       "id": "paper_afm_thermal_mapping_protocol"
     },
@@ -1082,7 +1086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "atomic force microscopy (afm)",
       "id": "concept_atomic_force_microscopy"
     },
@@ -1095,7 +1099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "nanoscale thermal mapping",
       "id": "concept_nanoscale_thermal_mapping"
     },
@@ -1108,7 +1112,7 @@
       "captured_at": "2026-06-16",
       "author": "Unknown (scanned textbook pages)",
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "scanning probe techniques (textbook excerpt)",
       "id": "paper_spm_textbook"
     },
@@ -1121,7 +1125,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "scanning probe microscopy (spm)",
       "id": "concept_scanning_probe_microscopy"
     },
@@ -1134,7 +1138,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "scanning tunneling microscopy (stm)",
       "id": "concept_scanning_tunneling_microscopy"
     },
@@ -1147,7 +1151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "quantum tunneling effect",
       "id": "concept_quantum_tunneling"
     },
@@ -1160,7 +1164,7 @@
       "captured_at": "2026-06-17",
       "author": "Myungkoo Kang; Rashi Sharma; Cesar Blanco; Daniel Wiedeman; Quentin Altemose; Patrick E. Lynch; Gil B. J. Sop Tagne; Yifei Zhang et al.",
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "solution-derived ge-sb-se-te phase-change chalcogenide films",
       "id": "paper_solution_derived_gesbsete"
     },
@@ -1173,7 +1177,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "ge2sb2se4te1 (ge-sb-se-te)",
       "id": "concept_gesbsete"
     },
@@ -1186,7 +1190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "chemical solution deposition",
       "id": "concept_chemical_solution_deposition"
     },
@@ -1199,7 +1203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "optical phase change material",
       "id": "concept_optical_pcm"
     },
@@ -1212,7 +1216,7 @@
       "captured_at": "2026-06-17",
       "author": "Dang-il Kim; Mizuki Kawaji; Hiroki Sato; Ryota Kawamura; Ryo Tamaki; Satoshi Kusaba; Yinli Wang; Yi Shuang; Yuji Sutou; Ikufumi Katayama; Jun Takeda",
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "thermally induced nanoscale phase change in cr2ge2te6 via stm",
       "id": "paper_crgt_stm"
     },
@@ -1225,7 +1229,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "cr2ge2te6 (crgt)",
       "id": "concept_cr2ge2te6"
     },
@@ -1238,7 +1242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "scanning tunneling spectroscopy (sts)",
       "id": "concept_scanning_tunneling_spectroscopy"
     },
@@ -1251,7 +1255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "amorphous-to-crystalline phase transition",
       "id": "concept_amorphous_crystalline_transition"
     },
@@ -1277,7 +1281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "transmission electron microscopy (tem)",
       "id": "concept_transmission_electron_microscopy"
     },
@@ -1342,7 +1346,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "power-time effect (pte) diagram",
       "id": "concept_pte_diagram"
     },
@@ -1368,7 +1372,7 @@
       "captured_at": "2026-05-25",
       "author": "Matthias Wuttig, Noboru Yamada",
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "wuttig & yamada 2007 - pcm review (nature materials)",
       "id": "paper_wuttig_yamada_2007"
     },
@@ -1381,7 +1385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "octahedral p-bonded crystal structure",
       "id": "concept_octahedral_p_bonding"
     },
@@ -1394,7 +1398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "kolobov umbrella flip (tetrahedral-octahedral)",
       "id": "concept_umbrella_flip"
     },
@@ -1407,7 +1411,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "pcm material design rules",
       "id": "concept_pcm_design_rules"
     },
@@ -1420,7 +1424,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "rewritable optical data storage (cd/dvd/blu-ray)",
       "id": "concept_optical_data_storage"
     },
@@ -1433,7 +1437,7 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "interface-controlled thermal properties of ultra-thin chalcogenide pcm devices",
       "id": "paper_interface_thermal_properties"
     },
@@ -1446,7 +1450,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "interface-controlled thermal properties",
       "id": "concept_interface_thermal_resistance"
     },
@@ -1459,7 +1463,7 @@
       "captured_at": "2026-06-17",
       "author": "Jayakrishnan V M; Sreekanth S; Ganesh J G",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "analysis of thermal stability of pcms and energy storage efficiency",
       "id": "paper_pcm_thermal_stability"
     },
@@ -1472,7 +1476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "microencapsulation of pcms",
       "id": "concept_microencapsulation"
     },
@@ -1485,7 +1489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "pcm thermal stability",
       "id": "concept_pcm_thermal_stability"
     },
@@ -1498,7 +1502,7 @@
       "captured_at": "2026-06-17",
       "author": "Unknown",
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "atomic force microscopy for cross-disciplinary materials research",
       "id": "paper_afm_crossdisciplinary"
     },
@@ -1524,7 +1528,7 @@
       "captured_at": null,
       "author": "Matthias Wuttig; Noboru Yamada",
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "phase-change materials for rewriteable data storage (wuttig & yamada, nature materials 2007)",
       "id": "files_nmat2009"
     },
@@ -1537,7 +1541,7 @@
       "captured_at": null,
       "author": "Cheng Hung Chu; Din Ping Tsai; Masud Mansuripur",
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "laser-induced phase transitions of ge2sb2te5 thin films (chu et al., optics express 2010)",
       "id": "files_oe_18_17_18383"
     },
@@ -1550,7 +1554,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "gesbte (gst) alloy family",
       "id": "concept_gst"
     },
@@ -1563,7 +1567,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "ge1sb2te4 (gst-124)",
       "id": "concept_ge1sb2te4"
     },
@@ -1576,7 +1580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "ag5in5sb60te30 (aist)",
       "id": "concept_aist"
     },
@@ -1589,7 +1593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "amorphous phase",
       "id": "concept_amorphous_phase"
     },
@@ -1602,7 +1606,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "crystalline phase",
       "id": "concept_crystalline_phase"
     },
@@ -1615,7 +1619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "crystallization",
       "id": "concept_crystallization"
     },
@@ -1628,7 +1632,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "amorphization",
       "id": "concept_amorphization"
     },
@@ -1641,7 +1645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "melt-quenching",
       "id": "concept_melt_quenching"
     },
@@ -1680,7 +1684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 7,
       "norm_label": "crystal-crystal phase transition mechanism",
       "id": "concept_crystal_crystal_transition"
     },
@@ -1693,7 +1697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "optical contrast (reflectivity difference)",
       "id": "concept_optical_contrast"
     },
@@ -1706,7 +1710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "rocksalt-like crystal structure with vacancies",
       "id": "concept_rocksalt_structure"
     },
@@ -1719,7 +1723,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "time-temperature-transformation (ttt) diagram",
       "id": "concept_ttt_diagram"
     },
@@ -1732,7 +1736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "phase-change random-access memory (pcram)",
       "id": "concept_pcram"
     },
@@ -1745,7 +1749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "storage-class memory (scm)",
       "id": "concept_storage_class_memory"
     },
@@ -1758,7 +1762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "phase-change (thermal) lithography",
       "id": "concept_phase_change_lithography"
     },
@@ -1771,7 +1775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "laser switching setup (lss)",
       "id": "files_bachelorarbeit_laser_switching_setup"
     },
@@ -1784,7 +1788,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "optical microscopy (om)",
       "id": "concept_optical_microscopy"
     },
@@ -1797,7 +1801,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scanning electron microscopy (sem)",
       "id": "concept_sem"
     },
@@ -1810,7 +1814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "atomic force microscopy (afm)",
       "id": "concept_afm"
     },
@@ -1836,7 +1840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "extended x-ray absorption fine structure (exafs)",
       "id": "concept_exafs"
     },
@@ -1849,7 +1853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 5,
       "norm_label": "selective chemical etching (naoh)",
       "id": "concept_selective_chemical_etching"
     },
@@ -1888,7 +1892,7 @@
       "captured_at": null,
       "author": "Athanasia Piperidou",
       "contributor": null,
-      "community": 1,
+      "community": 2,
       "norm_label": "piperidou master's thesis on sb2te3/ge1sb2te4 superlattices",
       "id": "files_bachelorarbeit_piperidou_thesis"
     },
@@ -1901,7 +1905,7 @@
       "captured_at": null,
       "author": "J. Tominaga et al.",
       "contributor": null,
-      "community": 2,
+      "community": 7,
       "norm_label": "tominaga et al. crystal-crystal switching proposal",
       "id": "files_bachelorarbeit_tominaga"
     },
@@ -1914,7 +1918,7 @@
       "captured_at": null,
       "author": "A. V. Kolobov et al.",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "kolobov et al. umbrella-flip phase-change mechanism (nature mater. 2004)",
       "id": "files_bachelorarbeit_kolobov"
     },
@@ -1927,7 +1931,7 @@
       "captured_at": null,
       "author": "Gunnar Bruns",
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "electronic switching in phase-change materials (bruns dissertation)",
       "id": "files_doctorarbeit_gunnarbruns_pcms"
     },
@@ -1940,7 +1944,7 @@
       "captured_at": null,
       "author": "Louis Martin-Monier et al.",
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "endurance of chalcogenide optical phase change materials: a review",
       "id": "files_ome_12_6_2145"
     },
@@ -1953,7 +1957,7 @@
       "captured_at": null,
       "author": "Felix Adams, Ichiro Takeuchi, Carlos Rios Ocampo, Yifei Mo",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "first-principles thermodynamic analysis of ternary chalcogenide phase change materials",
       "id": "files_firstprinciplespcmthermo"
     },
@@ -1966,7 +1970,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "sb2se3 (antimony selenide)",
       "id": "concept_sb2se3"
     },
@@ -1979,7 +1983,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "ge2sb2se4te (gsst)",
       "id": "concept_gsst"
     },
@@ -2005,7 +2009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "crystallization temperature",
       "id": "concept_crystallization_temperature"
     },
@@ -2018,7 +2022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "activation energy of charge transport",
       "id": "concept_activation_energy"
     },
@@ -2031,7 +2035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "endurance / cycling durability",
       "id": "concept_endurance_cycling"
     },
@@ -2044,7 +2048,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "oxidation of chalcogenides",
       "id": "concept_oxidation"
     },
@@ -2057,7 +2061,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "lightweight-element doping (n, o, c)",
       "id": "concept_doping"
     },
@@ -2070,7 +2074,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 7,
       "norm_label": "void formation / failure mechanisms",
       "id": "concept_void_formation"
     },
@@ -2083,7 +2087,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "density functional theory (dft) / first-principles calculations",
       "id": "concept_dft"
     },
@@ -2096,7 +2100,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "ostwald's rule (polymorph-mediated crystallization)",
       "id": "concept_ostwald_rule"
     },
@@ -2109,7 +2113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "metastable rock-salt (rs) polymorph",
       "id": "concept_rocksalt_phase"
     },
@@ -2122,7 +2126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "thermodynamic polymorph screening",
       "id": "concept_polymorph_screening"
     },
@@ -2135,7 +2139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "materials project (mp) database",
       "id": "concept_materials_project"
     },
@@ -2148,7 +2152,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "binary-binary tie line mixtures",
       "id": "concept_tie_line"
     },
@@ -2161,7 +2165,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 3,
       "norm_label": "ab initio molecular dynamics (aimd)",
       "id": "concept_aimd"
     },
@@ -2174,7 +2178,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "pulsed electrical tester (pet)",
       "id": "files_doctorarbeit_gunnarbruns_pcms_pet"
     },
@@ -2187,7 +2191,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "mushroom cell pcm device",
       "id": "files_doctorarbeit_gunnarbruns_pcms_mushroom_cell"
     },
@@ -2200,7 +2204,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "van der pauw sheet resistance measurement",
       "id": "files_doctorarbeit_gunnarbruns_pcms_vdp"
     },
@@ -2213,7 +2217,7 @@
       "captured_at": null,
       "author": "S. R. Ovshinsky",
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "ovshinsky (1968) reversible electrical switching in disordered structures",
       "id": "files_doctorarbeit_gunnarbruns_pcms_ovshinsky1968"
     },
@@ -2226,7 +2230,7 @@
       "captured_at": null,
       "author": "M. Boniardi",
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "boniardi (2009) drift in ge2sb2te5",
       "id": "files_doctorarbeit_gunnarbruns_pcms_boniardi2009"
     },
@@ -2239,7 +2243,7 @@
       "captured_at": null,
       "author": "J. Hegedus, S. R. Elliott",
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "hegedus & elliott (2008) fast crystallization of ge-sb-te",
       "id": "files_firstprinciplespcmthermo_hegedus_elliott"
     },
@@ -2252,7 +2256,7 @@
       "captured_at": null,
       "author": "Lukas Conrads, Matthias Wuttig, Dmitry N. Chigrin, Thomas Taubner",
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "review: the plasmonic phase-change material in3sbte2 for nanophotonics",
       "id": "files_the_plasmonic_pcm_in3sbte2_for_nanophotonics_review"
     },
@@ -2265,7 +2269,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "plasmonic phase-change material",
       "id": "concept_plasmonic_pcm"
     },
@@ -2278,7 +2282,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "nanophotonics",
       "id": "concept_nanophotonics"
     },
@@ -2291,7 +2295,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "metasurface",
       "id": "concept_metasurface"
     },
@@ -2304,7 +2308,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "nanoantenna",
       "id": "concept_nanoantenna"
     },
@@ -2317,7 +2321,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "negative permittivity (plasmonic behavior)",
       "id": "concept_negative_permittivity"
     },
@@ -2330,7 +2334,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "quantum theory of atoms in molecules (qtaim) bonding map",
       "id": "concept_qtaim"
     },
@@ -2343,7 +2347,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 2,
       "norm_label": "ge-sb-te (gst) alloys",
       "id": "concept_ge_sb_te"
     },
@@ -2356,7 +2360,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "direct laser writing / optical programming",
       "id": "concept_direct_laser_writing"
     },
@@ -2369,7 +2373,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "geometric phase metasurface",
       "id": "concept_geometric_phase_metasurface"
     },
@@ -2382,7 +2386,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "emissivity-shaping / thermal emission control",
       "id": "concept_emissivity_shaping"
     },
@@ -2395,7 +2399,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "polaritons (surface plasmon/phonon polaritons)",
       "id": "concept_polariton"
     },
@@ -2408,7 +2412,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "scattering-type scanning near-field optical microscopy (s-snom)",
       "id": "concept_s_snom"
     },
@@ -2421,7 +2425,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "split-ring resonator (srr)",
       "id": "concept_split_ring_resonator"
     },
@@ -2434,7 +2438,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "vo2 (vanadium dioxide, insulator-to-metal transition)",
       "id": "concept_vo2"
     },
@@ -2447,7 +2451,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "mid-infrared spectral range",
       "id": "concept_mid_infrared"
     },
@@ -2499,7 +2503,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "laser switching setup (lss)",
       "id": "concept_laser_switching_setup"
     },
@@ -2525,7 +2529,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "stochastic nucleation in crystallization",
       "id": "concept_stochastic_nucleation"
     },
@@ -2538,7 +2542,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 4,
       "norm_label": "neuromorphic photonics",
       "id": "concept_neuromorphic_photonics"
     },
@@ -2577,7 +2581,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 10,
       "norm_label": "scanning probe techniques (book excerpt)",
       "id": "files_scanning_probe_techniques_buchseiten_book"
     },
@@ -2590,9 +2594,9 @@
       "captured_at": null,
       "author": "Branch Education",
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_transcript",
-      "community": 0,
-      "norm_label": "electron microscope explainer (transcript)"
+      "community": 1,
+      "norm_label": "electron microscope explainer (transcript)",
+      "id": "raw_yt_6ad47fda5c0c_transcript"
     },
     {
       "label": "Electron Microscope",
@@ -2603,9 +2607,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_electron_microscope",
-      "community": 0,
-      "norm_label": "electron microscope"
+      "community": 1,
+      "norm_label": "electron microscope",
+      "id": "raw_yt_6ad47fda5c0c_electron_microscope"
     },
     {
       "label": "Scanning Transmission Electron Microscope (STEM)",
@@ -2616,9 +2620,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope",
-      "community": 0,
-      "norm_label": "scanning transmission electron microscope (stem)"
+      "community": 1,
+      "norm_label": "scanning transmission electron microscope (stem)",
+      "id": "raw_yt_6ad47fda5c0c_scanning_transmission_electron_microscope"
     },
     {
       "label": "Light Microscope",
@@ -2629,9 +2633,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_light_microscope",
-      "community": 0,
-      "norm_label": "light microscope"
+      "community": 1,
+      "norm_label": "light microscope",
+      "id": "raw_yt_6ad47fda5c0c_light_microscope"
     },
     {
       "label": "Field Emission Source",
@@ -2642,9 +2646,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_field_emission_source",
-      "community": 0,
-      "norm_label": "field emission source"
+      "community": 1,
+      "norm_label": "field emission source",
+      "id": "raw_yt_6ad47fda5c0c_field_emission_source"
     },
     {
       "label": "Tungsten Crystal Needle",
@@ -2655,9 +2659,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
-      "community": 0,
-      "norm_label": "tungsten crystal needle"
+      "community": 1,
+      "norm_label": "tungsten crystal needle",
+      "id": "raw_yt_6ad47fda5c0c_tungsten_crystal_needle"
     },
     {
       "label": "Extractor Ring",
@@ -2668,9 +2672,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_extractor_ring",
-      "community": 0,
-      "norm_label": "extractor ring"
+      "community": 1,
+      "norm_label": "extractor ring",
+      "id": "raw_yt_6ad47fda5c0c_extractor_ring"
     },
     {
       "label": "Electron Acceleration (70% Speed of Light)",
@@ -2681,9 +2685,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_electron_acceleration",
-      "community": 0,
-      "norm_label": "electron acceleration (70% speed of light)"
+      "community": 1,
+      "norm_label": "electron acceleration (70% speed of light)",
+      "id": "raw_yt_6ad47fda5c0c_electron_acceleration"
     },
     {
       "label": "Electron Beam",
@@ -2694,9 +2698,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_electron_beam",
-      "community": 0,
-      "norm_label": "electron beam"
+      "community": 1,
+      "norm_label": "electron beam",
+      "id": "raw_yt_6ad47fda5c0c_electron_beam"
     },
     {
       "label": "Magnetic Lens",
@@ -2707,9 +2711,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_magnetic_lens",
-      "community": 0,
-      "norm_label": "magnetic lens"
+      "community": 1,
+      "norm_label": "magnetic lens",
+      "id": "raw_yt_6ad47fda5c0c_magnetic_lens"
     },
     {
       "label": "Condenser Lens",
@@ -2720,9 +2724,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_condenser_lens",
-      "community": 0,
-      "norm_label": "condenser lens"
+      "community": 1,
+      "norm_label": "condenser lens",
+      "id": "raw_yt_6ad47fda5c0c_condenser_lens"
     },
     {
       "label": "Objective Lens",
@@ -2733,9 +2737,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_objective_lens",
-      "community": 0,
-      "norm_label": "objective lens"
+      "community": 1,
+      "norm_label": "objective lens",
+      "id": "raw_yt_6ad47fda5c0c_objective_lens"
     },
     {
       "label": "Projector Lens",
@@ -2746,9 +2750,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_projector_lens",
-      "community": 0,
-      "norm_label": "projector lens"
+      "community": 1,
+      "norm_label": "projector lens",
+      "id": "raw_yt_6ad47fda5c0c_projector_lens"
     },
     {
       "label": "Aperture",
@@ -2759,9 +2763,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_aperture",
-      "community": 0,
-      "norm_label": "aperture"
+      "community": 1,
+      "norm_label": "aperture",
+      "id": "raw_yt_6ad47fda5c0c_aperture"
     },
     {
       "label": "Specimen",
@@ -2772,9 +2776,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_specimen",
-      "community": 0,
-      "norm_label": "specimen"
+      "community": 1,
+      "norm_label": "specimen",
+      "id": "raw_yt_6ad47fda5c0c_specimen"
     },
     {
       "label": "Specimen Holder",
@@ -2785,9 +2789,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_specimen_holder",
-      "community": 0,
-      "norm_label": "specimen holder"
+      "community": 1,
+      "norm_label": "specimen holder",
+      "id": "raw_yt_6ad47fda5c0c_specimen_holder"
     },
     {
       "label": "Electron Scattering",
@@ -2798,9 +2802,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_electron_scattering",
-      "community": 0,
-      "norm_label": "electron scattering"
+      "community": 1,
+      "norm_label": "electron scattering",
+      "id": "raw_yt_6ad47fda5c0c_electron_scattering"
     },
     {
       "label": "Vacuum System",
@@ -2811,9 +2815,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_vacuum_system",
-      "community": 0,
-      "norm_label": "vacuum system"
+      "community": 1,
+      "norm_label": "vacuum system",
+      "id": "raw_yt_6ad47fda5c0c_vacuum_system"
     },
     {
       "label": "Optical Aberration",
@@ -2824,9 +2828,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_optical_aberration",
-      "community": 0,
-      "norm_label": "optical aberration"
+      "community": 1,
+      "norm_label": "optical aberration",
+      "id": "raw_yt_6ad47fda5c0c_optical_aberration"
     },
     {
       "label": "Lorentz Law",
@@ -2837,9 +2841,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_lorentz_law",
-      "community": 0,
-      "norm_label": "lorentz law"
+      "community": 1,
+      "norm_label": "lorentz law",
+      "id": "raw_yt_6ad47fda5c0c_lorentz_law"
     },
     {
       "label": "Electron Wavelength (Wave-Particle Duality)",
@@ -2850,9 +2854,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_electron_wavelength",
-      "community": 0,
-      "norm_label": "electron wavelength (wave-particle duality)"
+      "community": 1,
+      "norm_label": "electron wavelength (wave-particle duality)",
+      "id": "raw_yt_6ad47fda5c0c_electron_wavelength"
     },
     {
       "label": "Diffraction Limit of Light",
@@ -2863,9 +2867,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_diffraction_limit",
-      "community": 0,
-      "norm_label": "diffraction limit of light"
+      "community": 1,
+      "norm_label": "diffraction limit of light",
+      "id": "raw_yt_6ad47fda5c0c_diffraction_limit"
     },
     {
       "label": "Resolution",
@@ -2876,9 +2880,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_resolution",
-      "community": 0,
-      "norm_label": "resolution"
+      "community": 1,
+      "norm_label": "resolution",
+      "id": "raw_yt_6ad47fda5c0c_resolution"
     },
     {
       "label": "Magnification",
@@ -2889,9 +2893,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_magnification",
-      "community": 0,
-      "norm_label": "magnification"
+      "community": 1,
+      "norm_label": "magnification",
+      "id": "raw_yt_6ad47fda5c0c_magnification"
     },
     {
       "label": "Phosphorescent Screen",
@@ -2902,9 +2906,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_phosphorescent_screen",
-      "community": 0,
-      "norm_label": "phosphorescent screen"
+      "community": 1,
+      "norm_label": "phosphorescent screen",
+      "id": "raw_yt_6ad47fda5c0c_phosphorescent_screen"
     },
     {
       "label": "CMOS Camera",
@@ -2915,9 +2919,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_cmos_camera",
-      "community": 0,
-      "norm_label": "cmos camera"
+      "community": 1,
+      "norm_label": "cmos camera",
+      "id": "raw_yt_6ad47fda5c0c_cmos_camera"
     },
     {
       "label": "Secondary Electrons",
@@ -2928,9 +2932,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_secondary_electrons",
-      "community": 0,
-      "norm_label": "secondary electrons"
+      "community": 1,
+      "norm_label": "secondary electrons",
+      "id": "raw_yt_6ad47fda5c0c_secondary_electrons"
     },
     {
       "label": "X-ray Detector",
@@ -2941,9 +2945,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_xray_detector",
-      "community": 0,
-      "norm_label": "x-ray detector"
+      "community": 1,
+      "norm_label": "x-ray detector",
+      "id": "raw_yt_6ad47fda5c0c_xray_detector"
     },
     {
       "label": "Deflection Coils",
@@ -2954,9 +2958,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_deflection_coils",
-      "community": 0,
-      "norm_label": "deflection coils"
+      "community": 1,
+      "norm_label": "deflection coils",
+      "id": "raw_yt_6ad47fda5c0c_deflection_coils"
     },
     {
       "label": "Interaction Volume",
@@ -2967,9 +2971,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_interaction_volume",
-      "community": 0,
-      "norm_label": "interaction volume"
+      "community": 1,
+      "norm_label": "interaction volume",
+      "id": "raw_yt_6ad47fda5c0c_interaction_volume"
     },
     {
       "label": "Transistor",
@@ -2980,9 +2984,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_transistor",
-      "community": 0,
-      "norm_label": "transistor"
+      "community": 1,
+      "norm_label": "transistor",
+      "id": "raw_yt_6ad47fda5c0c_transistor"
     },
     {
       "label": "Thermo Fisher Scientific",
@@ -2993,9 +2997,568 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "raw_yt_6ad47fda5c0c_thermofisher",
+      "community": 1,
+      "norm_label": "thermo fisher scientific",
+      "id": "raw_yt_6ad47fda5c0c_thermofisher"
+    },
+    {
+      "label": "Memory Hierarchy",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
       "community": 0,
-      "norm_label": "thermo fisher scientific"
+      "norm_label": "memory hierarchy",
+      "id": "raw_yt_1a8aeb6ce67e_memory_hierarchy"
+    },
+    {
+      "label": "Capacity-Speed-Cost-Volatility Tradeoff",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "capacity-speed-cost-volatility tradeoff",
+      "id": "raw_yt_1a8aeb6ce67e_storage_tradeoff"
+    },
+    {
+      "label": "CPU",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "cpu",
+      "id": "raw_yt_1a8aeb6ce67e_cpu"
+    },
+    {
+      "label": "GPU",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "gpu",
+      "id": "raw_yt_1a8aeb6ce67e_gpu"
+    },
+    {
+      "label": "CPU Registers",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "cpu registers",
+      "id": "raw_yt_1a8aeb6ce67e_registers"
+    },
+    {
+      "label": "CPU Cache Memory",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "cpu cache memory",
+      "id": "raw_yt_1a8aeb6ce67e_cache_memory"
+    },
+    {
+      "label": "L1 Cache",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "l1 cache",
+      "id": "raw_yt_1a8aeb6ce67e_l1_cache"
+    },
+    {
+      "label": "L2 Cache",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "l2 cache",
+      "id": "raw_yt_1a8aeb6ce67e_l2_cache"
+    },
+    {
+      "label": "L3 Cache",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "l3 cache",
+      "id": "raw_yt_1a8aeb6ce67e_l3_cache"
+    },
+    {
+      "label": "SRAM Cell",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "sram cell",
+      "id": "raw_yt_1a8aeb6ce67e_sram"
+    },
+    {
+      "label": "D Flip-Flop",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "d flip-flop",
+      "id": "raw_yt_1a8aeb6ce67e_d_flip_flop"
+    },
+    {
+      "label": "DRAM",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "dram",
+      "id": "raw_yt_1a8aeb6ce67e_dram"
+    },
+    {
+      "label": "1T1C Memory Cell",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "1t1c memory cell",
+      "id": "raw_yt_1a8aeb6ce67e_1t1c_cell"
+    },
+    {
+      "label": "Sense Amplifier",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "sense amplifier",
+      "id": "raw_yt_1a8aeb6ce67e_sense_amplifier"
+    },
+    {
+      "label": "DRAM Refresh",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "dram refresh",
+      "id": "raw_yt_1a8aeb6ce67e_dram_refresh"
+    },
+    {
+      "label": "VRAM",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "vram",
+      "id": "raw_yt_1a8aeb6ce67e_vram"
+    },
+    {
+      "label": "Memory Controller",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "memory controller",
+      "id": "raw_yt_1a8aeb6ce67e_memory_controller"
+    },
+    {
+      "label": "Solid State Drive (SSD)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "solid state drive (ssd)",
+      "id": "raw_yt_1a8aeb6ce67e_ssd"
+    },
+    {
+      "label": "NVMe SSD",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "nvme ssd",
+      "id": "raw_yt_1a8aeb6ce67e_nvme_ssd"
+    },
+    {
+      "label": "SATA SSD",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "sata ssd",
+      "id": "raw_yt_1a8aeb6ce67e_sata_ssd"
+    },
+    {
+      "label": "3D NAND Flash",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "3d nand flash",
+      "id": "raw_yt_1a8aeb6ce67e_3d_nand_flash"
+    },
+    {
+      "label": "Charge Trap Flash (CTF)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "charge trap flash (ctf)",
+      "id": "raw_yt_1a8aeb6ce67e_charge_trap_flash"
+    },
+    {
+      "label": "Hard Disk Drive (HDD)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "hard disk drive (hdd)",
+      "id": "raw_yt_1a8aeb6ce67e_hdd"
+    },
+    {
+      "label": "Magnetic Domains",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "magnetic domains",
+      "id": "raw_yt_1a8aeb6ce67e_magnetic_domains"
+    },
+    {
+      "label": "Read/Write Head",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "read/write head",
+      "id": "raw_yt_1a8aeb6ce67e_read_write_head"
+    },
+    {
+      "label": "Internet and Cloud Storage",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "internet and cloud storage",
+      "id": "raw_yt_1a8aeb6ce67e_internet_cloud"
+    },
+    {
+      "label": "Volatility (Memory)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "volatility (memory)",
+      "id": "raw_yt_1a8aeb6ce67e_volatility"
+    },
+    {
+      "label": "Magnetic RAM (MRAM)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "magnetic ram (mram)",
+      "id": "raw_yt_1a8aeb6ce67e_magnetic_ram"
+    },
+    {
+      "label": "Phase Change Memory (PCM)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "phase change memory (pcm)",
+      "id": "raw_yt_1a8aeb6ce67e_phase_change_memory"
+    },
+    {
+      "label": "Micron",
+      "file_type": "document",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "micron",
+      "id": "raw_yt_1a8aeb6ce67e_micron"
+    },
+    {
+      "label": "AI Memory Hierarchy",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "ai memory hierarchy",
+      "id": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy"
+    },
+    {
+      "label": "AI Accelerator / AI Processor",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "ai accelerator / ai processor",
+      "id": "raw_yt_1a8aeb6ce67e_ai_accelerator"
+    },
+    {
+      "label": "High Bandwidth Memory (HBM)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "high bandwidth memory (hbm)",
+      "id": "raw_yt_1a8aeb6ce67e_hbm"
+    },
+    {
+      "label": "HBM3E",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "hbm3e",
+      "id": "raw_yt_1a8aeb6ce67e_hbm3e"
+    },
+    {
+      "label": "HBM4",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "hbm4",
+      "id": "raw_yt_1a8aeb6ce67e_hbm4"
+    },
+    {
+      "label": "Through-Silicon Via (TSV)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "through-silicon via (tsv)",
+      "id": "raw_yt_1a8aeb6ce67e_tsv"
+    },
+    {
+      "label": "Silicon Interposer",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "silicon interposer",
+      "id": "raw_yt_1a8aeb6ce67e_interposer"
+    },
+    {
+      "label": "DDR5 Server RDIMM",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "ddr5 server rdimm",
+      "id": "raw_yt_1a8aeb6ce67e_ddr5_rdimm"
+    },
+    {
+      "label": "LPDDR",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "lpddr",
+      "id": "raw_yt_1a8aeb6ce67e_lpddr"
+    },
+    {
+      "label": "CXL (Compute Express Link)",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "cxl (compute express link)",
+      "id": "raw_yt_1a8aeb6ce67e_cxl"
+    },
+    {
+      "label": "PCIe Gen6",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "pcie gen6",
+      "id": "raw_yt_1a8aeb6ce67e_pcie_gen6"
+    },
+    {
+      "label": "Context Window",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "context window",
+      "id": "raw_yt_1a8aeb6ce67e_context_window"
+    },
+    {
+      "label": "Transformer Block",
+      "file_type": "concept",
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "transformer block",
+      "id": "raw_yt_1a8aeb6ce67e_transformer_block"
     }
   ],
   "links": [
@@ -3247,6 +3810,26 @@
       "source_location": null,
       "weight": 1.0,
       "source": "paper_pcm_molecular_tellurides",
+      "target": "concept_phase_change_memory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_magnetic_ram",
+      "target": "concept_phase_change_memory"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
       "target": "concept_phase_change_memory"
     },
     {
@@ -5760,6 +6343,16 @@
       "target": "files_nmat2009"
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
+      "target": "files_nmat2009"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -6008,6 +6601,16 @@
       "weight": 1.0,
       "source": "concept_pcram",
       "target": "concept_storage_class_memory"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
+      "target": "concept_pcram"
     },
     {
       "relation": "conceptually_related_to",
@@ -6718,49 +7321,643 @@
       "weight": 1.0,
       "source": "raw_yt_6ad47fda5c0c_phosphorescent_screen",
       "target": "raw_yt_6ad47fda5c0c_cmos_camera"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_memory_hierarchy"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_magnetic_ram",
+      "target": "raw_yt_1a8aeb6ce67e_memory_hierarchy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_cache_memory"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_dram"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_hdd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_internet_cloud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_registers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_ssd"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_storage_tradeoff"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
+      "target": "raw_yt_1a8aeb6ce67e_memory_hierarchy"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_storage_tradeoff",
+      "target": "raw_yt_1a8aeb6ce67e_volatility"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cpu",
+      "target": "raw_yt_1a8aeb6ce67e_cache_memory"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cpu",
+      "target": "raw_yt_1a8aeb6ce67e_gpu"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cpu",
+      "target": "raw_yt_1a8aeb6ce67e_memory_controller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cpu",
+      "target": "raw_yt_1a8aeb6ce67e_registers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_gpu",
+      "target": "raw_yt_1a8aeb6ce67e_cache_memory"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_gpu",
+      "target": "raw_yt_1a8aeb6ce67e_vram"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_registers",
+      "target": "raw_yt_1a8aeb6ce67e_d_flip_flop"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cache_memory",
+      "target": "raw_yt_1a8aeb6ce67e_l1_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cache_memory",
+      "target": "raw_yt_1a8aeb6ce67e_l2_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cache_memory",
+      "target": "raw_yt_1a8aeb6ce67e_l3_cache"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_cache_memory",
+      "target": "raw_yt_1a8aeb6ce67e_sram"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_sram",
+      "target": "raw_yt_1a8aeb6ce67e_1t1c_cell"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram",
+      "target": "raw_yt_1a8aeb6ce67e_1t1c_cell"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram",
+      "target": "raw_yt_1a8aeb6ce67e_dram_refresh"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram",
+      "target": "raw_yt_1a8aeb6ce67e_memory_controller"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram",
+      "target": "raw_yt_1a8aeb6ce67e_sense_amplifier"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram",
+      "target": "raw_yt_1a8aeb6ce67e_volatility"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hbm3e",
+      "target": "raw_yt_1a8aeb6ce67e_dram"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_micron",
+      "target": "raw_yt_1a8aeb6ce67e_dram"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_vram",
+      "target": "raw_yt_1a8aeb6ce67e_dram"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_dram_refresh",
+      "target": "raw_yt_1a8aeb6ce67e_volatility"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_3d_nand_flash"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_hdd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_nvme_ssd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_sata_ssd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_nvme_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_pcie_gen6"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_nvme_ssd",
+      "target": "raw_yt_1a8aeb6ce67e_sata_ssd"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_3d_nand_flash",
+      "target": "raw_yt_1a8aeb6ce67e_charge_trap_flash"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_micron",
+      "target": "raw_yt_1a8aeb6ce67e_3d_nand_flash"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_charge_trap_flash",
+      "target": "raw_yt_1a8aeb6ce67e_volatility"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
+      "target": "raw_yt_1a8aeb6ce67e_charge_trap_flash"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hdd",
+      "target": "raw_yt_1a8aeb6ce67e_magnetic_domains"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hdd",
+      "target": "raw_yt_1a8aeb6ce67e_read_write_head"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_read_write_head",
+      "target": "raw_yt_1a8aeb6ce67e_magnetic_domains"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_phase_change_memory",
+      "target": "raw_yt_1a8aeb6ce67e_magnetic_ram"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_micron",
+      "target": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_cxl"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_ddr5_rdimm"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy",
+      "target": "raw_yt_1a8aeb6ce67e_hbm"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_context_window",
+      "target": "raw_yt_1a8aeb6ce67e_ai_memory_hierarchy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_accelerator",
+      "target": "raw_yt_1a8aeb6ce67e_context_window"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ai_accelerator",
+      "target": "raw_yt_1a8aeb6ce67e_hbm"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hbm",
+      "target": "raw_yt_1a8aeb6ce67e_hbm3e"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hbm",
+      "target": "raw_yt_1a8aeb6ce67e_hbm4"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hbm3e",
+      "target": "raw_yt_1a8aeb6ce67e_interposer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_hbm3e",
+      "target": "raw_yt_1a8aeb6ce67e_tsv"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_ddr5_rdimm",
+      "target": "raw_yt_1a8aeb6ce67e_lpddr"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Raw/yt_1a8aeb6ce67e.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "raw_yt_1a8aeb6ce67e_context_window",
+      "target": "raw_yt_1a8aeb6ce67e_transformer_block"
     }
   ],
   "hyperedges": [
     {
-      "id": "tem_lens_system",
-      "label": "TEM Three-Lens Magnification System",
+      "id": "desktop_memory_hierarchy_tiers",
+      "label": "Desktop Memory Hierarchy Tiers",
       "nodes": [
-        "raw_yt_6ad47fda5c0c_condenser_lens",
-        "raw_yt_6ad47fda5c0c_objective_lens",
-        "raw_yt_6ad47fda5c0c_projector_lens"
+        "raw_yt_1a8aeb6ce67e_registers",
+        "raw_yt_1a8aeb6ce67e_cache_memory",
+        "raw_yt_1a8aeb6ce67e_dram",
+        "raw_yt_1a8aeb6ce67e_ssd",
+        "raw_yt_1a8aeb6ce67e_hdd",
+        "raw_yt_1a8aeb6ce67e_internet_cloud"
       ],
-      "relation": "participate_in",
+      "relation": "form",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "raw/yt_6ad47fda5c0c.txt"
+      "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
     },
     {
-      "id": "electron_beam_generation",
-      "label": "Electron Beam Generation and Acceleration",
+      "id": "volatile_memory_tiers",
+      "label": "Volatile Memory Tiers",
       "nodes": [
-        "raw_yt_6ad47fda5c0c_field_emission_source",
-        "raw_yt_6ad47fda5c0c_tungsten_crystal_needle",
-        "raw_yt_6ad47fda5c0c_extractor_ring",
-        "raw_yt_6ad47fda5c0c_electron_acceleration"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "raw/yt_6ad47fda5c0c.txt"
-    },
-    {
-      "id": "imaging_detection",
-      "label": "Image Detection System",
-      "nodes": [
-        "raw_yt_6ad47fda5c0c_phosphorescent_screen",
-        "raw_yt_6ad47fda5c0c_cmos_camera",
-        "raw_yt_6ad47fda5c0c_electron_beam"
+        "raw_yt_1a8aeb6ce67e_registers",
+        "raw_yt_1a8aeb6ce67e_sram",
+        "raw_yt_1a8aeb6ce67e_dram",
+        "raw_yt_1a8aeb6ce67e_vram"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "raw/yt_6ad47fda5c0c.txt"
+      "confidence_score": 0.85,
+      "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
+    },
+    {
+      "id": "ai_server_memory_storage_stack",
+      "label": "AI Server Memory and Storage Stack",
+      "nodes": [
+        "raw_yt_1a8aeb6ce67e_hbm",
+        "raw_yt_1a8aeb6ce67e_ddr5_rdimm",
+        "raw_yt_1a8aeb6ce67e_cxl",
+        "raw_yt_1a8aeb6ce67e_nvme_ssd"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "C:\\___LLM_wiki\\PCM_Graph\\Raw\\yt_1a8aeb6ce67e.txt"
     }
   ],
-  "built_at_commit": "49cb5ed8846f4f0b3c6d5721064120561ae3386b"
+  "built_at_commit": "70b4c17e37bbb2e118fdcd855f038862c4e3ba33"
 }
