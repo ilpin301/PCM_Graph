@@ -1,0 +1,64 @@
+PULLING THE GRAPHIFY FIX — one-time steps for collaborators
+============================================================
+
+What changed
+------------
+The machine-local graphify cache is no longer tracked in git, because those
+files embed each machine's absolute paths (e.g. C:\___LLM_wiki\... vs
+F:\____IL_AI\...) and are rewritten on every run, which caused a merge
+conflict on almost every pull.
+
+Now in .gitignore (NOT tracked anymore):
+  graphify-out/manifest.json
+  graphify-out/.graphify_root
+  graphify-out/.graphify_python
+  graphify-out/cost.json
+  graphify-out/cache/
+  Raw/graphify-out/        (stray empty output - never the real graph)
+
+Still tracked and SHARED (machine-independent, keyed by semantic IDs):
+  graphify-out/graph.json
+  graphify-out/graph.html
+  graphify-out/GRAPH_REPORT.md
+  graphify-out/.graphify_labels.json
+
+
+1. Pull
+-------
+  git pull
+
+If it succeeds cleanly, you're done -> skip to step 4.
+
+
+2. If git complains (likely the first time)
+-------------------------------------------
+Your last graphify run modified the now-untracked cache files, so git may
+report a "modify/delete" conflict on graphify-out/manifest.json or cost.json.
+Discard your local copies (they are just regenerated cache - safe to drop):
+
+  git checkout -- graphify-out/manifest.json graphify-out/cost.json
+  git rm graphify-out/manifest.json graphify-out/cost.json
+  git pull
+
+If it still blocks, stash and retry:
+
+  git stash
+  git pull
+  git stash drop
+
+This only happens this one time. After that, pulls are clean forever.
+
+
+3. (nothing - step numbering kept simple)
+
+
+4. Going forward
+----------------
+- Always run "/graphify ." FROM THE REPO ROOT (the folder that contains this
+  file). Do NOT cd into Raw\ first. Running graphify from inside Raw\ creates a
+  junk empty Raw\graphify-out\ folder. If you ever see it, just delete it.
+
+- Normal workflow stays the same:
+    add sources -> /graphify . -> git add -A && git commit && git push
+  The other person just runs "git pull" and gets the updated graph with no
+  conflicts.
